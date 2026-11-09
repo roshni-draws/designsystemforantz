@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" data-root="..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cards · ANTZ Design System Foundation</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="White is the default.">
+<script>try { var t = localStorage.getItem('antz-ds-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css?v=8">
+<link rel="stylesheet" href="../components.css?v=8">
+<link rel="stylesheet" href="../assets/site.css?v=8">
+</head>
+<body data-page="cards">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-top"><button class="icon-btn site-menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><svg class="icon"><use href="#i-menu"/></svg></button><a class="site-brand" href="../index.html"><span class="tile-icon" aria-hidden="true"><svg class="icon"><use href="#i-grid"/></svg></span>ANTZ Foundation <small>v0.2</small></a><label class="site-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" placeholder="Search pages" aria-label="Search pages"><kbd>/</kbd></label><button class="icon-btn site-search-btn" type="button" aria-label="Search pages" data-nav-search><svg class="icon"><use href="#i-search"/></svg></button><div class="segmented segmented--pill theme-seg" role="group" aria-label="Theme"><button type="button" data-theme-set="auto" aria-pressed="true"><svg class="icon icon--sm"><use href="#i-monitor"/></svg><span>Auto</span></button><button type="button" data-theme-set="light" aria-pressed="false"><svg class="icon icon--sm"><use href="#i-sun"/></svg><span>Light</span></button><button type="button" data-theme-set="dark" aria-pressed="false"><svg class="icon icon--sm"><use href="#i-moon"/></svg><span>Dark</span></button></div></header><div class="site-scrim"></div>
+<div class="site">
+<nav class="site-nav" id="site-nav" aria-label="Documentation"><label class="search nav-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" placeholder="Search pages" aria-label="Search pages"></label><a class="nav-link" href="../index.html">Welcome</a><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-1" data-current="false"><svg class="icon"><use href="#i-home"/></svg><span>Getting started</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-1" hidden><li><a class="nav-link" href="get-started.html">Get started</a></li><li><a class="nav-link" href="principles.html">Principles</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-2" data-current="false"><svg class="icon"><use href="#i-sliders"/></svg><span>Foundations</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-2" hidden><li><a class="nav-link" href="colour.html">Colour</a></li><li><a class="nav-link" href="colour-guardrails.html">Colour guardrails</a></li><li><a class="nav-link" href="contrast.html">Contrast</a></li><li><a class="nav-link" href="type.html">Typography</a></li><li><a class="nav-link" href="spacing.html">Spacing</a></li><li><a class="nav-link" href="radii.html">Radii</a></li><li><a class="nav-link" href="elevation.html">Elevation</a></li><li><a class="nav-link" href="motion.html">Motion</a></li><li><a class="nav-link" href="icons.html">Icons</a></li><li><a class="nav-link" href="layout.html">Layout and breakpoints</a></li><li><a class="nav-link" href="responsive.html">Responsive</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="true" aria-controls="ng-3" data-current="true"><svg class="icon"><use href="#i-grid"/></svg><span>Components</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-3"><li><a class="nav-link" href="buttons.html">Buttons</a></li><li><a class="nav-link" href="text-fields.html">Text fields</a></li><li><a class="nav-link" href="selection.html">Selection controls</a></li><li><a class="nav-link" href="chips-and-tabs.html">Chips and tabs</a></li><li><a class="nav-link" href="badges.html">Badges and status</a></li><li><a class="nav-link" href="avatars.html">Avatars</a></li><li><a class="nav-link" href="cards.html" aria-current="page">Cards</a></li><li><a class="nav-link" href="list-rows.html">List rows</a></li><li><a class="nav-link" href="alerts-and-toasts.html">Alerts and toasts</a></li><li><a class="nav-link" href="menus-and-dialogs.html">Menus and dialogs</a></li><li><a class="nav-link" href="progress.html">Progress</a></li><li><a class="nav-link" href="table.html">Table</a></li><li><a class="nav-link" href="loading.html">Loading and empty</a></li><li><a class="nav-link" href="navigation.html">Navigation</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-4" data-current="false"><svg class="icon"><use href="#i-zap"/></svg><span>Pattern components</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-4" hidden><li><a class="nav-link" href="top-bar.html">Top bar and action bar</a></li><li><a class="nav-link" href="post-card.html">Post card</a></li><li><a class="nav-link" href="attachments.html">Attachments</a></li><li><a class="nav-link" href="priority.html">Priority picker</a></li><li><a class="nav-link" href="lists.html">Lists</a></li><li><a class="nav-link" href="date-picker.html">Date picker</a></li><li><a class="nav-link" href="animal-card.html">Animal card</a></li><li><a class="nav-link" href="progress-ring.html">Progress bar and ring</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-5" data-current="false"><svg class="icon"><use href="#i-trend"/></svg><span>Stat cards</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-5" hidden><li><a class="nav-link" href="stat-figures.html">Stat figures</a></li><li><a class="nav-link" href="key-insights.html">Key insights</a></li><li><a class="nav-link" href="insights-summary.html">Insights summary</a></li><li><a class="nav-link" href="site-card.html">Site card</a></li><li><a class="nav-link" href="day-week-month.html">Day, week, month</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-6" data-current="false"><svg class="icon"><use href="#i-smartphone"/></svg><span>Screens</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-6" hidden><li><a class="nav-link" href="screens.html">All screens</a></li><li><a class="nav-link" href="screen-home.html">Home</a></li><li><a class="nav-link" href="screen-housing.html">Housing</a></li><li><a class="nav-link" href="screen-people.html">Choose people</a></li><li><a class="nav-link" href="screen-task.html">Add task</a></li><li><a class="nav-link" href="screen-request.html">New request</a></li><li><a class="nav-link" href="screen-date.html">Set a date</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-7" data-current="false"><svg class="icon"><use href="#i-chat"/></svg><span>Content</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-7" hidden><li><a class="nav-link" href="voice.html">Voice and words</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-8" data-current="false"><svg class="icon"><use href="#i-download"/></svg><span>Resources</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-8" hidden><li><a class="nav-link" href="resources.html">Downloads</a></li><li><a class="nav-link" href="figma-mapping.html">Figma mapping</a></li></ul></div><p class="nav-empty" hidden>No pages match.</p></nav>
+<main class="site-main" id="main">
+<header class="page-banner"><div class="page-banner__text"><span class="t-overline">Components</span><h1 class="page-banner__title">Cards</h1><p class="page-banner__intro">White is the default.</p></div><div class="page-banner__art" style="--c:var(--hue-sky)" aria-hidden="true"><svg class="icon"><use href="#i-grid"/></svg></div></header>
+<div class="page-tabs" role="tablist" aria-label="Page sections"><button role="tab" type="button" id="tab-overview" aria-controls="panel-overview" aria-selected="true" data-tab="overview">Overview</button><button role="tab" type="button" id="tab-usage" aria-controls="panel-usage" aria-selected="false" data-tab="usage" tabindex="-1">Usage</button><button role="tab" type="button" id="tab-code" aria-controls="panel-code" aria-selected="false" data-tab="code" tabindex="-1">Code</button></div>
+<div class="page-body"><div class="page-content">
+<section class="tab-panel" id="panel-overview" data-tab="overview" role="tabpanel" aria-labelledby="tab-overview"><div class="doc" id="cards">
+        <h3>Cards</h3>
+        <p class="lead">White is the default. Feature fills are for one hero card per screen, taken from Style 6's widgets.</p>
+        <ol class="anatomy"><li>Header: icon tile, title, meta</li><li>Trailing action: count, segmented or go-arrow</li><li>Body: number, list or chart</li><li>Footer link (optional)</li></ol>
+        <div class="demo demo--canvas demo--grid">
+          <a class="card card--interactive" href="#cards"><div class="card__head"><span class="tile-icon"><svg class="icon"><use href="#i-zap"/></svg></span><span><b class="card__title">Projects</b><span class="card__meta">3 yours · 5 shared</span></span><span class="card__end card__go"><svg class="icon"><use href="#i-arrow-up-right"/></svg></span></div><span class="t-stat num">8</span><span class="t-caption">Updated 41 times this week</span></a>
+          <div class="card card--flat"><div class="card__head"><span class="tile-icon" style="--c:var(--hue-coral)"><svg class="icon"><use href="#i-shield"/></svg></span><span><b class="card__title">Needs review</b><span class="card__meta">Flat (hairline)</span></span><span class="card__end count count--danger">2</span></div><span class="t-small t-secondary">Two posts are waiting for you.</span></div>
+          <div class="card card--sunken"><b class="card__title">Sunken</b><span class="t-small t-secondary">Inside a white panel, for grouped content.</span></div>
+        </div>
+        <h4>Feature fills</h4>
+        <div class="demo demo--canvas demo--grid">
+          <div class="card card--green"><b class="card__title">Green</b><span class="card__meta">Strong action</span><span class="t-title-md num">18%</span></div>
+          <div class="card card--strong"><b class="card__title">Charcoal</b><span class="card__meta">Ring texture</span><span class="t-title-md num">192</span></div>
+          <div class="card card--blue"><b class="card__title">Blue</b><span class="card__meta">Large figures only</span><span class="t-title-md num">643</span></div>
+          <div class="card card--teal"><b class="card__title">Teal</b><span class="card__meta">Large figures only</span><span class="t-title-md num">42</span></div>
+          <div class="card card--mint"><b class="card__title">Mint</b><span class="card__meta">Positive summary</span><span class="t-title-md num">+14%</span></div>
+          <div class="card card--glow"><b class="card__title">Glow</b><span class="card__meta">White with a green corner</span><span class="t-title-md num">76</span></div>
+          <div class="card card--aurora"><b class="card__title">Aurora</b><span class="card__meta">Onboarding, empty states</span><span class="t-title-md">From idea to post.</span></div>
+        </div>
+        
+      </div></section><section class="tab-panel" id="panel-usage" data-tab="usage" role="tabpanel" aria-labelledby="tab-usage" hidden><div class="doc" id="cards-usage"><h3>Cards</h3><div class="dd">
+          <div class="do"><b><svg class="icon icon--sm"><use href="#i-check"/></svg>Do</b><ul><li>Use at most one feature fill per screen.</li><li>Make the whole card the link when it goes somewhere, and rotate the arrow on hover.</li></ul></div>
+          <div class="dont"><b><svg class="icon icon--sm"><use href="#i-x"/></svg>Don't</b><ul><li>Put small white text on blue or teal.</li><li>Add a border and a shadow to the same card.</li><li>Run a stripe down a card's outer edge; put the rail beside the text.</li></ul><div class="eg"><span class="t-overline">Wrong</span><div class="row" style="background:var(--color-danger-bg);box-shadow:inset 3px 0 0 var(--color-signal-danger)"><span class="row__body"><span class="row__title">Outer edge stripe</span><span class="row__meta">Bends round the corner</span></span></div></div></div>
+        </div></div></section><section class="tab-panel" id="panel-code" data-tab="code" role="tabpanel" aria-labelledby="tab-code" hidden><div class="doc" id="cards-code"><h3>Cards</h3><h4>Classes</h4><div class="chips"><code>.card</code><code>.card--interactive</code><code>.card__head</code><code>.tile-icon</code><code>.icon</code><code>.card__title</code><code>.card__meta</code><code>.card__end</code><code>.card__go</code><code>.t-stat</code><code>.num</code><code>.t-caption</code><code>.card--flat</code><code>.count</code><code>.count--danger</code><code>.t-small</code><code>.t-secondary</code><code>.card--sunken</code><code>.card--green</code><code>.t-title-md</code><code>.card--strong</code><code>.card--blue</code><code>.card--teal</code><code>.card--mint</code><code>.card--glow</code><code>.card--aurora</code></div><details class="code" open><summary>Example 1 markup</summary><pre><code>&lt;div class="demo demo--canvas demo--grid"&gt;
+  &lt;a class="card card--interactive" href="#cards"&gt;
+    &lt;div class="card__head"&gt;
+      &lt;span class="tile-icon"&gt;&lt;svg class="icon"&gt;&lt;use href="#i-zap"/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span&gt;&lt;b class="card__title"&gt;Projects&lt;/b&gt;&lt;span class="card__meta"&gt;3 yours · 5 shared&lt;/span&gt;&lt;/span&gt;&lt;span class="card__end card__go"&gt;&lt;svg class="icon"&gt;&lt;use href="#i-arrow-up-right"/&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;span class="t-stat num"&gt;8&lt;/span&gt;&lt;span class="t-caption"&gt;Updated 41 times this week&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;div class="card card--flat"&gt;
+    &lt;div class="card__head"&gt;
+      &lt;span class="tile-icon" style="--c:var(--hue-coral)"&gt;&lt;svg class="icon"&gt;&lt;use href="#i-shield"/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span&gt;&lt;b class="card__title"&gt;Needs review&lt;/b&gt;&lt;span class="card__meta"&gt;Flat (hairline)&lt;/span&gt;&lt;/span&gt;&lt;span class="card__end count count--danger"&gt;2&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;span class="t-small t-secondary"&gt;Two posts are waiting for you.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="card card--sunken"&gt;
+    &lt;b class="card__title"&gt;Sunken&lt;/b&gt;&lt;span class="t-small t-secondary"&gt;Inside a white panel, for grouped content.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></details><details class="code"><summary>Example 2 markup</summary><pre><code>&lt;div class="demo demo--canvas demo--grid"&gt;
+  &lt;div class="card card--green"&gt;
+    &lt;b class="card__title"&gt;Green&lt;/b&gt;&lt;span class="card__meta"&gt;Strong action&lt;/span&gt;&lt;span class="t-title-md num"&gt;18%&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="card card--strong"&gt;
+    &lt;b class="card__title"&gt;Charcoal&lt;/b&gt;&lt;span class="card__meta"&gt;Ring texture&lt;/span&gt;&lt;span class="t-title-md num"&gt;192&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="card card--blue"&gt;
+    &lt;b class="card__title"&gt;Blue&lt;/b&gt;&lt;span class="card__meta"&gt;Large figures only&lt;/span&gt;&lt;span class="t-title-md num"&gt;643&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="card card--teal"&gt;
+    &lt;b class="card__title"&gt;Teal&lt;/b&gt;&lt;span class="card__meta"&gt;Large figures only&lt;/span&gt;&lt;span class="t-title-md num"&gt;42&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="card card--mint"&gt;
+    &lt;b class="card__title"&gt;Mint&lt;/b&gt;&lt;span class="card__meta"&gt;Positive summary&lt;/span&gt;&lt;span class="t-title-md num"&gt;+14%&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="card card--glow"&gt;
+    &lt;b class="card__title"&gt;Glow&lt;/b&gt;&lt;span class="card__meta"&gt;White with a green corner&lt;/span&gt;&lt;span class="t-title-md num"&gt;76&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="card card--aurora"&gt;
+    &lt;b class="card__title"&gt;Aurora&lt;/b&gt;&lt;span class="card__meta"&gt;Onboarding, empty states&lt;/span&gt;&lt;span class="t-title-md"&gt;From idea to post.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></details></div></section>
+<nav class="pager" aria-label="Previous and next page"><a class="pager__prev" href="avatars.html"><svg class="icon"><use href="#i-arrow-left"/></svg><span><small>Previous</small><b>Avatars</b></span></a><a class="pager__next" href="list-rows.html"><span><small>Next · Components</small><b>List rows</b></span><svg class="icon"><use href="#i-arrow-right"/></svg></a></nav>
+</div><aside class="page-toc" id="page-toc" aria-label="On this page"></aside></div>
+<footer class="site-foot">ANTZ Design System Foundation v0.2 · <a href="../README.md">README</a> · <a href="../colors.json" download>colors.json</a></footer>
+</main>
+</div>
+<div class="toast-region" id="toasts" role="status" aria-live="polite"></div>
+<script src="../assets/site.js?v=8"></script>
+</body>
+</html>

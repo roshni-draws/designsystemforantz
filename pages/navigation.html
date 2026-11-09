@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" data-root="..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navigation · ANTZ Design System Foundation</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="The app bar is Style 6&#x27;s white header.">
+<script>try { var t = localStorage.getItem('antz-ds-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css?v=8">
+<link rel="stylesheet" href="../components.css?v=8">
+<link rel="stylesheet" href="../assets/site.css?v=8">
+</head>
+<body data-page="navigation">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-top"><button class="icon-btn site-menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><svg class="icon"><use href="#i-menu"/></svg></button><a class="site-brand" href="../index.html"><span class="tile-icon" aria-hidden="true"><svg class="icon"><use href="#i-grid"/></svg></span>ANTZ Foundation <small>v0.2</small></a><label class="site-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" placeholder="Search pages" aria-label="Search pages"><kbd>/</kbd></label><button class="icon-btn site-search-btn" type="button" aria-label="Search pages" data-nav-search><svg class="icon"><use href="#i-search"/></svg></button><div class="segmented segmented--pill theme-seg" role="group" aria-label="Theme"><button type="button" data-theme-set="auto" aria-pressed="true"><svg class="icon icon--sm"><use href="#i-monitor"/></svg><span>Auto</span></button><button type="button" data-theme-set="light" aria-pressed="false"><svg class="icon icon--sm"><use href="#i-sun"/></svg><span>Light</span></button><button type="button" data-theme-set="dark" aria-pressed="false"><svg class="icon icon--sm"><use href="#i-moon"/></svg><span>Dark</span></button></div></header><div class="site-scrim"></div>
+<div class="site">
+<nav class="site-nav" id="site-nav" aria-label="Documentation"><label class="search nav-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" placeholder="Search pages" aria-label="Search pages"></label><a class="nav-link" href="../index.html">Welcome</a><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-1" data-current="false"><svg class="icon"><use href="#i-home"/></svg><span>Getting started</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-1" hidden><li><a class="nav-link" href="get-started.html">Get started</a></li><li><a class="nav-link" href="principles.html">Principles</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-2" data-current="false"><svg class="icon"><use href="#i-sliders"/></svg><span>Foundations</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-2" hidden><li><a class="nav-link" href="colour.html">Colour</a></li><li><a class="nav-link" href="colour-guardrails.html">Colour guardrails</a></li><li><a class="nav-link" href="contrast.html">Contrast</a></li><li><a class="nav-link" href="type.html">Typography</a></li><li><a class="nav-link" href="spacing.html">Spacing</a></li><li><a class="nav-link" href="radii.html">Radii</a></li><li><a class="nav-link" href="elevation.html">Elevation</a></li><li><a class="nav-link" href="motion.html">Motion</a></li><li><a class="nav-link" href="icons.html">Icons</a></li><li><a class="nav-link" href="layout.html">Layout and breakpoints</a></li><li><a class="nav-link" href="responsive.html">Responsive</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="true" aria-controls="ng-3" data-current="true"><svg class="icon"><use href="#i-grid"/></svg><span>Components</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-3"><li><a class="nav-link" href="buttons.html">Buttons</a></li><li><a class="nav-link" href="text-fields.html">Text fields</a></li><li><a class="nav-link" href="selection.html">Selection controls</a></li><li><a class="nav-link" href="chips-and-tabs.html">Chips and tabs</a></li><li><a class="nav-link" href="badges.html">Badges and status</a></li><li><a class="nav-link" href="avatars.html">Avatars</a></li><li><a class="nav-link" href="cards.html">Cards</a></li><li><a class="nav-link" href="list-rows.html">List rows</a></li><li><a class="nav-link" href="alerts-and-toasts.html">Alerts and toasts</a></li><li><a class="nav-link" href="menus-and-dialogs.html">Menus and dialogs</a></li><li><a class="nav-link" href="progress.html">Progress</a></li><li><a class="nav-link" href="table.html">Table</a></li><li><a class="nav-link" href="loading.html">Loading and empty</a></li><li><a class="nav-link" href="navigation.html" aria-current="page">Navigation</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-4" data-current="false"><svg class="icon"><use href="#i-zap"/></svg><span>Pattern components</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-4" hidden><li><a class="nav-link" href="top-bar.html">Top bar and action bar</a></li><li><a class="nav-link" href="post-card.html">Post card</a></li><li><a class="nav-link" href="attachments.html">Attachments</a></li><li><a class="nav-link" href="priority.html">Priority picker</a></li><li><a class="nav-link" href="lists.html">Lists</a></li><li><a class="nav-link" href="date-picker.html">Date picker</a></li><li><a class="nav-link" href="animal-card.html">Animal card</a></li><li><a class="nav-link" href="progress-ring.html">Progress bar and ring</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-5" data-current="false"><svg class="icon"><use href="#i-trend"/></svg><span>Stat cards</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-5" hidden><li><a class="nav-link" href="stat-figures.html">Stat figures</a></li><li><a class="nav-link" href="key-insights.html">Key insights</a></li><li><a class="nav-link" href="insights-summary.html">Insights summary</a></li><li><a class="nav-link" href="site-card.html">Site card</a></li><li><a class="nav-link" href="day-week-month.html">Day, week, month</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-6" data-current="false"><svg class="icon"><use href="#i-smartphone"/></svg><span>Screens</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-6" hidden><li><a class="nav-link" href="screens.html">All screens</a></li><li><a class="nav-link" href="screen-home.html">Home</a></li><li><a class="nav-link" href="screen-housing.html">Housing</a></li><li><a class="nav-link" href="screen-people.html">Choose people</a></li><li><a class="nav-link" href="screen-task.html">Add task</a></li><li><a class="nav-link" href="screen-request.html">New request</a></li><li><a class="nav-link" href="screen-date.html">Set a date</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-7" data-current="false"><svg class="icon"><use href="#i-chat"/></svg><span>Content</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-7" hidden><li><a class="nav-link" href="voice.html">Voice and words</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-8" data-current="false"><svg class="icon"><use href="#i-download"/></svg><span>Resources</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-8" hidden><li><a class="nav-link" href="resources.html">Downloads</a></li><li><a class="nav-link" href="figma-mapping.html">Figma mapping</a></li></ul></div><p class="nav-empty" hidden>No pages match.</p></nav>
+<main class="site-main" id="main">
+<header class="page-banner"><div class="page-banner__text"><span class="t-overline">Components</span><h1 class="page-banner__title">Navigation</h1><p class="page-banner__intro">The app bar is Style 6's white header.</p></div><div class="page-banner__art" style="--c:var(--hue-sky)" aria-hidden="true"><svg class="icon"><use href="#i-grid"/></svg></div></header>
+<div class="page-tabs" role="tablist" aria-label="Page sections"><button role="tab" type="button" id="tab-overview" aria-controls="panel-overview" aria-selected="true" data-tab="overview">Overview</button><button role="tab" type="button" id="tab-usage" aria-controls="panel-usage" aria-selected="false" data-tab="usage" tabindex="-1">Usage</button><button role="tab" type="button" id="tab-code" aria-controls="panel-code" aria-selected="false" data-tab="code" tabindex="-1">Code</button></div>
+<div class="page-body"><div class="page-content">
+<section class="tab-panel" id="panel-overview" data-tab="overview" role="tabpanel" aria-labelledby="tab-overview"><div class="doc" id="nav">
+        <h3>App bar, side nav and dock</h3>
+        <p class="lead">The app bar is Style 6's white header. The side nav lists the product's main areas. The dock is Style 6's frosted Quick Actions bar.</p>
+        <div class="demo demo--canvas demo--col">
+          <header class="appbar"><div class="appbar__brand"><span class="tile-icon tile-icon--solid" aria-hidden="true"><svg class="icon"><use href="#i-grid"/></svg></span>ANTZ</div><div class="appbar__end"><label class="search"><svg class="icon"><use href="#i-search"/></svg><input placeholder="Search" aria-label="Search"><span class="kbd">⌘K</span></label><button class="icon-btn" type="button" aria-label="Notifications, 2 new"><svg class="icon"><use href="#i-bell"/></svg><span class="icon-btn__dot"></span></button><span class="avatar avatar--lg">AS<span class="avatar__presence"></span></span></div></header>
+        </div>
+        <div class="demo demo--canvas demo--grid">
+          <nav class="sidenav" aria-label="Example, light">
+            <a class="sidenav__item" href="#nav" aria-current="page"><svg class="icon"><use href="#i-home"/></svg>Home</a>
+            <a class="sidenav__item" href="#nav"><svg class="icon"><use href="#i-zap"/></svg>Projects</a>
+            <a class="sidenav__item" href="#nav"><svg class="icon"><use href="#i-users"/></svg>Team<span class="count count--danger">1</span></a>
+            <a class="sidenav__item" href="#nav"><svg class="icon"><use href="#i-plug"/></svg>Apps</a>
+            <div class="sidenav__sep"></div>
+            <a class="sidenav__item" href="#nav"><svg class="icon"><use href="#i-sliders"/></svg>Settings</a>
+          </nav>
+          <nav class="sidenav sidenav--deep" aria-label="Example, deep">
+            <div class="sidenav__brand"><span class="tile-icon tile-icon--solid" aria-hidden="true"><svg class="icon"><use href="#i-grid"/></svg></span>ANTZ</div>
+            <a class="sidenav__item" href="#nav" aria-current="page"><svg class="icon"><use href="#i-home"/></svg>Home</a>
+            <a class="sidenav__item" href="#nav"><svg class="icon"><use href="#i-zap"/></svg>Projects</a>
+            <a class="sidenav__item" href="#nav"><svg class="icon"><use href="#i-users"/></svg>Team</a>
+            <a class="sidenav__item" href="#nav"><svg class="icon"><use href="#i-plug"/></svg>Apps</a>
+          </nav>
+        </div>
+        <div class="demo demo--canvas" style="justify-content:center;padding:28px 12px">
+          <div class="dock" role="toolbar" aria-label="Dock">
+            <button class="dock__btn" type="button"><svg class="icon"><use href="#i-grid"/></svg>Quick actions</button>
+            <button class="icon-btn icon-btn--round" type="button" aria-label="Add"><svg class="icon"><use href="#i-plus"/></svg></button>
+          </div>
+        </div>
+        <p class="t-small t-secondary">Two side-nav treatments: light (Style 6) and deep green. Use one per product.</p>
+      
+      </div>
+<div class="doc" id="fc-tabbar">
+        <h3>Bottom navigation</h3>
+        <p class="lead">Five destinations at most. On a phone it is a bottom bar; inside a <code>.shell</code> on a tablet or desktop it becomes a side rail (see <a href="responsive.html#responsive">Responsive</a>). The current one gets a soft pill behind its icon and a semibold label. Labels stay visible.</p>
+        <div class="demo demo--canvas" style="justify-content:center">
+          <nav class="tabbar" aria-label="Example navigation" style="width:min(420px,100%);border-radius:var(--radius-lg)">
+            <a class="tabbar__item" href="#fc-tabbar" aria-current="page"><span class="tabbar__pill"><svg class="icon"><use href="#i-home"/></svg></span><span>Home</span></a>
+            <a class="tabbar__item" href="#fc-tabbar"><span class="tabbar__pill"><svg class="icon"><use href="#i-grid"/></svg></span><span>Menu</span></a>
+            <a class="tabbar__item" href="#fc-tabbar"><span class="tabbar__pill"><svg class="icon"><use href="#i-help"/></svg></span><span>Help desk</span></a>
+            <a class="tabbar__item" href="#fc-tabbar"><span class="tabbar__pill"><svg class="icon"><use href="#i-file"/></svg></span><span>Notes</span></a>
+            <a class="tabbar__item" href="#fc-tabbar"><span class="tabbar__pill"><svg class="icon"><use href="#i-user"/></svg></span><span>Profile</span></a>
+          </nav>
+        </div>
+      
+      </div></section><section class="tab-panel" id="panel-usage" data-tab="usage" role="tabpanel" aria-labelledby="tab-usage" hidden><div class="doc" id="nav-usage"><h3>App bar, side nav and dock</h3><div class="dd">
+          <div class="do"><b><svg class="icon icon--sm"><use href="#i-check"/></svg>Do</b><ul><li>Mark the current page with <code>aria-current</code>.</li><li>Keep the side nav to the product's main areas.</li></ul></div>
+          <div class="dont"><b><svg class="icon icon--sm"><use href="#i-x"/></svg>Don't</b><ul><li>Use both side nav treatments in one product.</li><li>Put more than one dock on a screen.</li></ul></div>
+        </div></div>
+<div class="doc" id="fc-tabbar-usage"><h3>Bottom navigation</h3><div class="dd">
+          <div class="do"><b><svg class="icon icon--sm"><use href="#i-check"/></svg>Do</b><ul><li>Keep 3 to 5 destinations, each with a label.</li><li>Show the current one with the soft pill and <code>aria-current</code>.</li></ul></div>
+          <div class="dont"><b><svg class="icon icon--sm"><use href="#i-x"/></svg>Don't</b><ul><li>Hide labels to fit more items.</li><li>Put actions in the bar; use a FAB or the action bar.</li></ul></div>
+        </div></div></section><section class="tab-panel" id="panel-code" data-tab="code" role="tabpanel" aria-labelledby="tab-code" hidden><div class="doc" id="nav-code"><h3>App bar, side nav and dock</h3><h4>Classes</h4><div class="chips"><code>.appbar</code><code>.appbar__brand</code><code>.tile-icon</code><code>.tile-icon--solid</code><code>.icon</code><code>.appbar__end</code><code>.search</code><code>.kbd</code><code>.icon-btn</code><code>.icon-btn__dot</code><code>.avatar</code><code>.avatar--lg</code><code>.avatar__presence</code><code>.sidenav</code><code>.sidenav__item</code><code>.count</code><code>.count--danger</code><code>.sidenav__sep</code><code>.sidenav--deep</code><code>.sidenav__brand</code><code>.dock</code><code>.dock__btn</code><code>.icon-btn--round</code><code>.t-small</code><code>.t-secondary</code></div><details class="code" open><summary>Example 1 markup</summary><pre><code>&lt;div class="demo demo--canvas demo--col"&gt;
+  &lt;header class="appbar"&gt;
+    &lt;div class="appbar__brand"&gt;
+      &lt;span class="tile-icon tile-icon--solid" aria-hidden="true"&gt;&lt;svg class="icon"&gt;&lt;use href="#i-grid"/&gt;&lt;/svg&gt;&lt;/span&gt;ANTZ
+    &lt;/div&gt;
+    &lt;div class="appbar__end"&gt;
+      &lt;label class="search"&gt;
+        &lt;svg class="icon"&gt;&lt;use href="#i-search"/&gt;&lt;/svg&gt;&lt;input placeholder="Search" aria-label="Search"&gt;&lt;span class="kbd"&gt;⌘K&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;button class="icon-btn" type="button" aria-label="Notifications, 2 new"&gt;
+        &lt;svg class="icon"&gt;&lt;use href="#i-bell"/&gt;&lt;/svg&gt;&lt;span class="icon-btn__dot"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;span class="avatar avatar--lg"&gt;AS&lt;span class="avatar__presence"&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+&lt;/div&gt;</code></pre></details><details class="code"><summary>Example 2 markup</summary><pre><code>&lt;div class="demo demo--canvas demo--grid"&gt;
+  &lt;nav class="sidenav" aria-label="Example, light"&gt;
+    &lt;a class="sidenav__item" href="#nav" aria-current="page"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-home"/&gt;&lt;/svg&gt;Home
+    &lt;/a&gt;
+    &lt;a class="sidenav__item" href="#nav"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-zap"/&gt;&lt;/svg&gt;Projects
+    &lt;/a&gt;
+    &lt;a class="sidenav__item" href="#nav"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-users"/&gt;&lt;/svg&gt;Team&lt;span class="count count--danger"&gt;1&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class="sidenav__item" href="#nav"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-plug"/&gt;&lt;/svg&gt;Apps
+    &lt;/a&gt;
+    &lt;div class="sidenav__sep"&gt;
+    &lt;/div&gt;
+    &lt;a class="sidenav__item" href="#nav"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-sliders"/&gt;&lt;/svg&gt;Settings
+    &lt;/a&gt;
+  &lt;/nav&gt;
+  &lt;nav class="sidenav sidenav--deep" aria-label="Example, deep"&gt;
+    &lt;div class="sidenav__brand"&gt;
+      &lt;span class="tile-icon tile-icon--solid" aria-hidden="true"&gt;&lt;svg class="icon"&gt;&lt;use href="#i-grid"/&gt;&lt;/svg&gt;&lt;/span&gt;ANTZ
+    &lt;/div&gt;
+    &lt;a class="sidenav__item" href="#nav" aria-current="page"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-home"/&gt;&lt;/svg&gt;Home
+    &lt;/a&gt;
+    &lt;a class="sidenav__item" href="#nav"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-zap"/&gt;&lt;/svg&gt;Projects
+    &lt;/a&gt;
+    &lt;a class="sidenav__item" href="#nav"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-users"/&gt;&lt;/svg&gt;Team
+    &lt;/a&gt;
+    &lt;a class="sidenav__item" href="#nav"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-plug"/&gt;&lt;/svg&gt;Apps
+    &lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;</code></pre></details><details class="code"><summary>Example 3 markup</summary><pre><code>&lt;div class="demo demo--canvas" style="justify-content:center;padding:28px 12px"&gt;
+  &lt;div class="dock" role="toolbar" aria-label="Dock"&gt;
+    &lt;button class="dock__btn" type="button"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-grid"/&gt;&lt;/svg&gt;Quick actions
+    &lt;/button&gt;
+    &lt;button class="icon-btn icon-btn--round" type="button" aria-label="Add"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-plus"/&gt;&lt;/svg&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></details></div>
+<div class="doc" id="fc-tabbar-code"><h3>Bottom navigation</h3><h4>Classes</h4><div class="chips"><code>.tabbar</code><code>.tabbar__item</code><code>.tabbar__pill</code><code>.icon</code></div><details class="code" open><summary>Example 1 markup</summary><pre><code>&lt;div class="demo demo--canvas" style="justify-content:center"&gt;
+  &lt;nav class="tabbar" aria-label="Example navigation" style="width:min(420px,100%);border-radius:var(--radius-lg)"&gt;
+    &lt;a class="tabbar__item" href="#fc-tabbar" aria-current="page"&gt;
+      &lt;span class="tabbar__pill"&gt;&lt;svg class="icon"&gt;&lt;use href="#i-home"/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span&gt;Home&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class="tabbar__item" href="#fc-tabbar"&gt;
+      &lt;span class="tabbar__pill"&gt;&lt;svg class="icon"&gt;&lt;use href="#i-grid"/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span&gt;Menu&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class="tabbar__item" href="#fc-tabbar"&gt;
+      &lt;span class="tabbar__pill"&gt;&lt;svg class="icon"&gt;&lt;use href="#i-help"/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span&gt;Help desk&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class="tabbar__item" href="#fc-tabbar"&gt;
+      &lt;span class="tabbar__pill"&gt;&lt;svg class="icon"&gt;&lt;use href="#i-file"/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span&gt;Notes&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class="tabbar__item" href="#fc-tabbar"&gt;
+      &lt;span class="tabbar__pill"&gt;&lt;svg class="icon"&gt;&lt;use href="#i-user"/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span&gt;Profile&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;</code></pre></details></div></section>
+<nav class="pager" aria-label="Previous and next page"><a class="pager__prev" href="loading.html"><svg class="icon"><use href="#i-arrow-left"/></svg><span><small>Previous</small><b>Loading and empty</b></span></a><a class="pager__next" href="top-bar.html"><span><small>Next · Pattern components</small><b>Top bar and action bar</b></span><svg class="icon"><use href="#i-arrow-right"/></svg></a></nav>
+</div><aside class="page-toc" id="page-toc" aria-label="On this page"></aside></div>
+<footer class="site-foot">ANTZ Design System Foundation v0.2 · <a href="../README.md">README</a> · <a href="../colors.json" download>colors.json</a></footer>
+</main>
+</div>
+<div class="toast-region" id="toasts" role="status" aria-live="polite"></div>
+<script src="../assets/site.js?v=8"></script>
+</body>
+</html>

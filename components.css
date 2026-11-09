@@ -689,8 +689,8 @@ a.animal:hover { background: var(--color-surface-hover); }
   .shell-host .show-mobile { display: none !important; }
   .shell { flex-direction: row; }
   .shell > .tabbar { order: 0; width: 88px; grid-auto-flow: row; grid-auto-rows: min-content; align-content: start; gap: var(--space-3); padding: var(--space-5) var(--space-1); box-shadow: inset -1px 0 0 var(--color-border-subtle); }
-  .split { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
-  .split--aside { grid-template-columns: minmax(0, 1fr); }
+  .split { gap: var(--space-4); }  /* tablet portrait: stacked */
+  .split--even { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .split > .split__full { grid-column: 1 / -1; }
   .topbar { min-height: 68px; gap: var(--space-2-5); padding: var(--space-3) var(--space-5); }
   .topbar__title { font-size: var(--text-2xl); }
@@ -706,6 +706,10 @@ a.animal:hover { background: var(--color-surface-hover); }
   .shell > .tabbar .tabbar__item:hover { background: var(--color-surface-hover); }
   .shell > .tabbar .tabbar__item[aria-current="page"] { background: var(--color-accent-soft); }
   .split, .split--aside { grid-template-columns: minmax(0, 1.7fr) minmax(300px, 1fr); gap: var(--space-5); }
+  .split--even { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@container shell (min-width: 1280px) {
+  .split, .split--aside { grid-template-columns: minmax(0, 2fr) minmax(340px, 1fr); }
   .split--even { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 

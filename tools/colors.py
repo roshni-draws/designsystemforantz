@@ -4,7 +4,7 @@
   python3 tools/colors.py build      write colors.json from tokens.css (W3C DTCG format)
   python3 tools/colors.py check      compare colors.json with tokens.css; exit 1 on any mismatch
   python3 tools/colors.py contrast   print WCAG ratios for the approved pairs, light and dark
-  python3 tools/colors.py html       rewrite the contrast table in index.html between its markers
+  python3 tools/colors.py html       rewrite the contrast table in pages/colour-guardrails.html
 
 Run from the design-system-foundation folder.
 """
@@ -13,7 +13,7 @@ import json, os, re, sys
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOKENS = os.path.join(HERE, 'tokens.css')
 JSON_OUT = os.path.join(HERE, 'colors.json')
-INDEX = os.path.join(HERE, 'index.html')
+INDEX = os.path.join(HERE, 'pages', 'colour-guardrails.html')  # holds the contrast table
 def whole(pattern, text, flags=0):
     """Match the whole string."""
     return re.match('(?:%s)\\Z' % pattern, text, flags)
@@ -332,7 +332,7 @@ def html():
     i, j = s.index(a) + len(a), s.index(b)
     s = s[:i] + '\n' + '\n'.join(out) + '\n' + s[j:]
     open(INDEX, 'w').write(s)
-    print('wrote %d rows into index.html' % len(out))
+    print('wrote %d rows into %s' % (len(out), os.path.relpath(INDEX, HERE)))
 
 
 if __name__ == '__main__':

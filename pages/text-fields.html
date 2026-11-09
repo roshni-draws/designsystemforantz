@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en" data-root="..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Text fields · ANTZ Design System Foundation</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="Label above, hint below, error replaces the hint.">
+<script>try { var t = localStorage.getItem('antz-ds-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css?v=8">
+<link rel="stylesheet" href="../components.css?v=8">
+<link rel="stylesheet" href="../assets/site.css?v=8">
+</head>
+<body data-page="text-fields">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-top"><button class="icon-btn site-menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><svg class="icon"><use href="#i-menu"/></svg></button><a class="site-brand" href="../index.html"><span class="tile-icon" aria-hidden="true"><svg class="icon"><use href="#i-grid"/></svg></span>ANTZ Foundation <small>v0.2</small></a><label class="site-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" placeholder="Search pages" aria-label="Search pages"><kbd>/</kbd></label><button class="icon-btn site-search-btn" type="button" aria-label="Search pages" data-nav-search><svg class="icon"><use href="#i-search"/></svg></button><div class="segmented segmented--pill theme-seg" role="group" aria-label="Theme"><button type="button" data-theme-set="auto" aria-pressed="true"><svg class="icon icon--sm"><use href="#i-monitor"/></svg><span>Auto</span></button><button type="button" data-theme-set="light" aria-pressed="false"><svg class="icon icon--sm"><use href="#i-sun"/></svg><span>Light</span></button><button type="button" data-theme-set="dark" aria-pressed="false"><svg class="icon icon--sm"><use href="#i-moon"/></svg><span>Dark</span></button></div></header><div class="site-scrim"></div>
+<div class="site">
+<nav class="site-nav" id="site-nav" aria-label="Documentation"><label class="search nav-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" placeholder="Search pages" aria-label="Search pages"></label><a class="nav-link" href="../index.html">Welcome</a><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-1" data-current="false"><svg class="icon"><use href="#i-home"/></svg><span>Getting started</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-1" hidden><li><a class="nav-link" href="get-started.html">Get started</a></li><li><a class="nav-link" href="principles.html">Principles</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-2" data-current="false"><svg class="icon"><use href="#i-sliders"/></svg><span>Foundations</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-2" hidden><li><a class="nav-link" href="colour.html">Colour</a></li><li><a class="nav-link" href="colour-guardrails.html">Colour guardrails</a></li><li><a class="nav-link" href="contrast.html">Contrast</a></li><li><a class="nav-link" href="type.html">Typography</a></li><li><a class="nav-link" href="spacing.html">Spacing</a></li><li><a class="nav-link" href="radii.html">Radii</a></li><li><a class="nav-link" href="elevation.html">Elevation</a></li><li><a class="nav-link" href="motion.html">Motion</a></li><li><a class="nav-link" href="icons.html">Icons</a></li><li><a class="nav-link" href="layout.html">Layout and breakpoints</a></li><li><a class="nav-link" href="responsive.html">Responsive</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="true" aria-controls="ng-3" data-current="true"><svg class="icon"><use href="#i-grid"/></svg><span>Components</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-3"><li><a class="nav-link" href="buttons.html">Buttons</a></li><li><a class="nav-link" href="text-fields.html" aria-current="page">Text fields</a></li><li><a class="nav-link" href="selection.html">Selection controls</a></li><li><a class="nav-link" href="chips-and-tabs.html">Chips and tabs</a></li><li><a class="nav-link" href="badges.html">Badges and status</a></li><li><a class="nav-link" href="avatars.html">Avatars</a></li><li><a class="nav-link" href="cards.html">Cards</a></li><li><a class="nav-link" href="list-rows.html">List rows</a></li><li><a class="nav-link" href="alerts-and-toasts.html">Alerts and toasts</a></li><li><a class="nav-link" href="menus-and-dialogs.html">Menus and dialogs</a></li><li><a class="nav-link" href="progress.html">Progress</a></li><li><a class="nav-link" href="table.html">Table</a></li><li><a class="nav-link" href="loading.html">Loading and empty</a></li><li><a class="nav-link" href="navigation.html">Navigation</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-4" data-current="false"><svg class="icon"><use href="#i-zap"/></svg><span>Pattern components</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-4" hidden><li><a class="nav-link" href="top-bar.html">Top bar and action bar</a></li><li><a class="nav-link" href="post-card.html">Post card</a></li><li><a class="nav-link" href="attachments.html">Attachments</a></li><li><a class="nav-link" href="priority.html">Priority picker</a></li><li><a class="nav-link" href="lists.html">Lists</a></li><li><a class="nav-link" href="date-picker.html">Date picker</a></li><li><a class="nav-link" href="animal-card.html">Animal card</a></li><li><a class="nav-link" href="progress-ring.html">Progress bar and ring</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-5" data-current="false"><svg class="icon"><use href="#i-trend"/></svg><span>Stat cards</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-5" hidden><li><a class="nav-link" href="stat-figures.html">Stat figures</a></li><li><a class="nav-link" href="key-insights.html">Key insights</a></li><li><a class="nav-link" href="insights-summary.html">Insights summary</a></li><li><a class="nav-link" href="site-card.html">Site card</a></li><li><a class="nav-link" href="day-week-month.html">Day, week, month</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-6" data-current="false"><svg class="icon"><use href="#i-smartphone"/></svg><span>Screens</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-6" hidden><li><a class="nav-link" href="screens.html">All screens</a></li><li><a class="nav-link" href="screen-home.html">Home</a></li><li><a class="nav-link" href="screen-housing.html">Housing</a></li><li><a class="nav-link" href="screen-people.html">Choose people</a></li><li><a class="nav-link" href="screen-task.html">Add task</a></li><li><a class="nav-link" href="screen-request.html">New request</a></li><li><a class="nav-link" href="screen-date.html">Set a date</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-7" data-current="false"><svg class="icon"><use href="#i-chat"/></svg><span>Content</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-7" hidden><li><a class="nav-link" href="voice.html">Voice and words</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-8" data-current="false"><svg class="icon"><use href="#i-download"/></svg><span>Resources</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-8" hidden><li><a class="nav-link" href="resources.html">Downloads</a></li><li><a class="nav-link" href="figma-mapping.html">Figma mapping</a></li></ul></div><p class="nav-empty" hidden>No pages match.</p></nav>
+<main class="site-main" id="main">
+<header class="page-banner"><div class="page-banner__text"><span class="t-overline">Components</span><h1 class="page-banner__title">Text fields</h1><p class="page-banner__intro">Label above, hint below, error replaces the hint.</p></div><div class="page-banner__art" style="--c:var(--hue-sky)" aria-hidden="true"><svg class="icon"><use href="#i-grid"/></svg></div></header>
+<div class="page-tabs" role="tablist" aria-label="Page sections"><button role="tab" type="button" id="tab-overview" aria-controls="panel-overview" aria-selected="true" data-tab="overview">Overview</button><button role="tab" type="button" id="tab-usage" aria-controls="panel-usage" aria-selected="false" data-tab="usage" tabindex="-1">Usage</button><button role="tab" type="button" id="tab-code" aria-controls="panel-code" aria-selected="false" data-tab="code" tabindex="-1">Code</button></div>
+<div class="page-body"><div class="page-content">
+<section class="tab-panel" id="panel-overview" data-tab="overview" role="tabpanel" aria-labelledby="tab-overview"><div class="doc" id="fields">
+        <h3>Text fields</h3>
+        <p class="lead">Label above, hint below, error replaces the hint. Fields are white with a 3:1 border (Style 6 uses a fainter fill; the border was darkened to meet AA for controls).</p>
+        <ol class="anatomy"><li>Label, 13px semibold</li><li>Field, 44px min, 10px corners</li><li>Hint or error, 12px</li><li>Optional or required marker</li></ol>
+        <div class="demo demo--grid">
+          <div class="field"><label class="field__label" for="f1">Display name</label><input class="input" id="f1" placeholder="e.g. Asha"><span class="field__hint">Shown to your team.</span></div>
+          <div class="field"><label class="field__label" for="f2">Display name</label><input class="input" id="f2" value="Asha" style="border-color:var(--color-accent);box-shadow:0 0 0 3px var(--color-focus-glow)"><span class="field__hint">Focus</span></div>
+          <div class="field"><label class="field__label" for="f3">Work email <span class="req" aria-hidden="true">*</span></label><input class="input" id="f3" value="asha@" aria-invalid="true" aria-describedby="f3e"><span class="field__error" id="f3e"><svg class="icon"><use href="#i-alert"/></svg>Enter an email like name@antz.ai</span></div>
+          <div class="field"><label class="field__label" for="f4">Company</label><input class="input" id="f4" value="Riverside Zoo" disabled><span class="field__hint">Set by your admin.</span></div>
+          <div class="field"><label class="field__label" for="f5">Role <span class="opt">(optional)</span></label><div class="select-wrap"><select class="select" id="f5"><option>Marketing</option><option>Operations</option><option>Keeper</option></select></div></div>
+          <div class="field"><label class="field__label" for="f6">Notes</label><textarea class="textarea" id="f6" rows="3" placeholder="Add any details for your team…"></textarea></div>
+        </div>
+        <h4>Search</h4>
+        <div class="demo"><label class="search" style="width:min(460px,100%)"><svg class="icon"><use href="#i-search"/></svg><input placeholder="Search files, projects, people…" aria-label="Search"><span class="kbd">⌘K</span></label></div>
+        
+      </div>
+<div class="doc" id="fc-fields">
+        <h3>Field additions</h3>
+        <p class="lead">From the Figma field set: a leading icon, a trailing icon button, a filled style, a large size, success and warning tones, a label with a help button, and the floating label that Figma calls "filled-out".</p>
+        <div class="demo demo--grid">
+          <div class="field"><label class="field__label" for="fx1">Animal <button class="field__help" type="button" aria-label="About this field"><svg class="icon"><use href="#i-help"/></svg></button></label><div class="input-group"><svg class="icon"><use href="#i-search"/></svg><input class="input" id="fx1" placeholder="Name or AAID"><button class="icon-btn input-group__end" type="button" aria-label="Scan a tag"><svg class="icon"><use href="#i-scan"/></svg></button></div><span class="field__hint">Scan the ear tag or type the name.</span></div>
+          <div class="field"><label class="field__label" for="fx2">Keeper <span class="opt">(optional)</span></label><div class="input-group"><svg class="icon"><use href="#i-user"/></svg><input class="input input--filled" id="fx2" placeholder="Search keepers"></div><span class="field__hint">Filled style, for use on white cards.</span></div>
+          <div class="field"><label class="field__label field__label--lg" for="fx3">Enclosure <span class="req" aria-hidden="true">*</span></label><div class="input-group"><svg class="icon"><use href="#i-pin"/></svg><input class="input input--lg" id="fx3" value="Elephant Camp · E2"></div><span class="field__hint">Large: 52px, for the main field on a screen.</span></div>
+          <div class="field"><label class="field__label" for="fx4">Weight (kg)</label><input class="input input--success" id="fx4" value="3,420" aria-describedby="fx4h"><span class="field__hint field__hint--success" id="fx4h">Within the normal range.</span></div>
+          <div class="field"><label class="field__label" for="fx5">Animals in enclosure</label><input class="input input--warning" id="fx5" value="9" aria-describedby="fx5h"><span class="field__hint field__hint--warning" id="fx5h">This enclosure is planned for 8.</span></div>
+          <div class="field field--float"><label class="field__label" for="fx6">Set date</label><div class="input-group"><svg class="icon"><use href="#i-calendar"/></svg><input class="input" id="fx6" value="10 Jul 2026"></div></div>
+        </div>
+        <p class="t-small t-secondary" style="margin-top:12px">Figma's eight other field colours (teal, sky, navy and so on) are left out on purpose: a field's colour should say its state, not its category.</p>
+      
+      </div>
+<div class="doc" id="fc-search">
+        <h3>Search bar</h3>
+        <p class="lead">The Figma "styled field": a pill with a menu button, the query and trailing search and scan buttons. Use it once, at the top of a home screen. The search row pairs the plain search with a filter button.</p>
+        <div class="demo demo--col" style="max-width:440px">
+          <div class="search search--pill" role="search"><button class="icon-btn" type="button" aria-label="Menu"><svg class="icon"><use href="#i-menu"/></svg></button><input placeholder="Search animals, sites, people" aria-label="Search"><button class="icon-btn" type="button" aria-label="Search"><svg class="icon"><use href="#i-search"/></svg></button><button class="icon-btn" type="button" aria-label="Scan a tag"><svg class="icon"><use href="#i-scan"/></svg></button></div>
+          <div class="search search--pill is-valid" role="search"><svg class="icon"><use href="#i-search"/></svg><input value="Madhav" aria-label="Search"><button class="icon-btn" type="button" aria-label="Clear"><svg class="icon"><use href="#i-x"/></svg></button></div>
+          <div class="search search--pill is-invalid" role="search"><svg class="icon"><use href="#i-search"/></svg><input value="AAID 0000" aria-label="Search" aria-invalid="true"><button class="icon-btn" type="button" aria-label="Clear"><svg class="icon"><use href="#i-x"/></svg></button></div>
+          <div class="search search--pill" role="search"><svg class="icon"><use href="#i-search"/></svg><input placeholder="Search is offline" aria-label="Search" disabled><button class="icon-btn" type="button" aria-label="Scan a tag" disabled><svg class="icon"><use href="#i-scan"/></svg></button></div>
+          <div class="search-row"><label class="search"><svg class="icon"><use href="#i-search"/></svg><input value="Vaccination due" aria-label="Search tasks"></label><button class="icon-btn icon-btn--line" type="button" aria-label="Filter"><svg class="icon"><use href="#i-filter"/></svg></button></div>
+        </div>
+      
+      </div></section><section class="tab-panel" id="panel-usage" data-tab="usage" role="tabpanel" aria-labelledby="tab-usage" hidden><div class="doc" id="fields-usage"><h3>Text fields</h3><div class="dd">
+          <div class="do"><b><svg class="icon icon--sm"><use href="#i-check"/></svg>Do</b><ul><li>Say what's wrong and how to fix it: "Enter an email like name@antz.ai".</li><li>Link the error with <code>aria-describedby</code> and set <code>aria-invalid</code>.</li></ul></div>
+          <div class="dont"><b><svg class="icon icon--sm"><use href="#i-x"/></svg>Don't</b><ul><li>Use the placeholder as the label.</li><li>Show errors before the person has left the field.</li></ul></div>
+        </div></div>
+<div class="doc" id="fc-fields-usage"><h3>Field additions</h3><div class="dd">
+          <div class="do"><b><svg class="icon icon--sm"><use href="#i-check"/></svg>Do</b><ul><li>Use the floating label where space is tight, such as a date in a card.</li><li>Pair a success or warning border with a hint that says why.</li></ul></div>
+          <div class="dont"><b><svg class="icon icon--sm"><use href="#i-x"/></svg>Don't</b><ul><li>Colour a field by category, such as teal or navy.</li><li>Use the filled style on the mint board; it needs a white card.</li></ul></div>
+        </div></div>
+<div class="doc" id="fc-search-usage"><h3>Search bar</h3><div class="dd">
+          <div class="do"><b><svg class="icon icon--sm"><use href="#i-check"/></svg>Do</b><ul><li>Use the pill search once, at the top of a home screen.</li><li>Keep its trailing actions to two: search and scan.</li></ul></div>
+          <div class="dont"><b><svg class="icon icon--sm"><use href="#i-x"/></svg>Don't</b><ul><li>Use the pill as a form field.</li><li>Show a valid or invalid state without saying what was found.</li></ul></div>
+        </div></div></section><section class="tab-panel" id="panel-code" data-tab="code" role="tabpanel" aria-labelledby="tab-code" hidden><div class="doc" id="fields-code"><h3>Text fields</h3><h4>Classes</h4><div class="chips"><code>.field</code><code>.field__label</code><code>.input</code><code>.field__hint</code><code>.req</code><code>.field__error</code><code>.icon</code><code>.opt</code><code>.select-wrap</code><code>.select</code><code>.textarea</code><code>.search</code><code>.kbd</code></div><details class="code" open><summary>Example 1 markup</summary><pre><code>&lt;div class="demo demo--grid"&gt;
+  &lt;div class="field"&gt;
+    &lt;label class="field__label" for="f1"&gt;Display name&lt;/label&gt;
+    &lt;input class="input" id="f1" placeholder="e.g. Asha"&gt;&lt;span class="field__hint"&gt;Shown to your team.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="field"&gt;
+    &lt;label class="field__label" for="f2"&gt;Display name&lt;/label&gt;
+    &lt;input class="input" id="f2" value="Asha" style="border-color:var(--color-accent);box-shadow:0 0 0 3px var(--color-focus-glow)"&gt;&lt;span class="field__hint"&gt;Focus&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="field"&gt;
+    &lt;label class="field__label" for="f3"&gt;Work email &lt;span class="req" aria-hidden="true"&gt;*&lt;/span&gt;&lt;/label&gt;
+    &lt;input class="input" id="f3" value="asha@" aria-invalid="true" aria-describedby="f3e"&gt;&lt;span class="field__error" id="f3e"&gt;&lt;svg class="icon"&gt;&lt;use href="#i-alert"/&gt;&lt;/svg&gt;Enter an email like name@antz.ai&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="field"&gt;
+    &lt;label class="field__label" for="f4"&gt;Company&lt;/label&gt;
+    &lt;input class="input" id="f4" value="Riverside Zoo" disabled&gt;&lt;span class="field__hint"&gt;Set by your admin.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="field"&gt;
+    &lt;label class="field__label" for="f5"&gt;Role &lt;span class="opt"&gt;(optional)&lt;/span&gt;&lt;/label&gt;
+    &lt;div class="select-wrap"&gt;
+      &lt;select class="select" id="f5"&gt;
+        &lt;option&gt;Marketing&lt;/option&gt;
+        &lt;option&gt;Operations&lt;/option&gt;
+        &lt;option&gt;Keeper&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="field"&gt;
+    &lt;label class="field__label" for="f6"&gt;Notes&lt;/label&gt;
+    &lt;textarea class="textarea" id="f6" rows="3" placeholder="Add any details for your team…"&gt;
+    &lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></details><details class="code"><summary>Example 2 markup</summary><pre><code>&lt;div class="demo"&gt;
+  &lt;label class="search" style="width:min(460px,100%)"&gt;
+    &lt;svg class="icon"&gt;&lt;use href="#i-search"/&gt;&lt;/svg&gt;&lt;input placeholder="Search files, projects, people…" aria-label="Search"&gt;&lt;span class="kbd"&gt;⌘K&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;</code></pre></details></div>
+<div class="doc" id="fc-fields-code"><h3>Field additions</h3><h4>Classes</h4><div class="chips"><code>.field</code><code>.field__label</code><code>.field__help</code><code>.icon</code><code>.input-group</code><code>.input</code><code>.icon-btn</code><code>.input-group__end</code><code>.field__hint</code><code>.opt</code><code>.input--filled</code><code>.field__label--lg</code><code>.req</code><code>.input--lg</code><code>.input--success</code><code>.field__hint--success</code><code>.input--warning</code><code>.field__hint--warning</code><code>.field--float</code><code>.t-small</code><code>.t-secondary</code></div><details class="code" open><summary>Example 1 markup</summary><pre><code>&lt;div class="demo demo--grid"&gt;
+  &lt;div class="field"&gt;
+    &lt;label class="field__label" for="fx1"&gt;
+      Animal
+      &lt;button class="field__help" type="button" aria-label="About this field"&gt;
+        &lt;svg class="icon"&gt;&lt;use href="#i-help"/&gt;&lt;/svg&gt;
+      &lt;/button&gt;
+    &lt;/label&gt;
+    &lt;div class="input-group"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-search"/&gt;&lt;/svg&gt;&lt;input class="input" id="fx1" placeholder="Name or AAID"&gt;
+      &lt;button class="icon-btn input-group__end" type="button" aria-label="Scan a tag"&gt;
+        &lt;svg class="icon"&gt;&lt;use href="#i-scan"/&gt;&lt;/svg&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;span class="field__hint"&gt;Scan the ear tag or type the name.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="field"&gt;
+    &lt;label class="field__label" for="fx2"&gt;Keeper &lt;span class="opt"&gt;(optional)&lt;/span&gt;&lt;/label&gt;
+    &lt;div class="input-group"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-user"/&gt;&lt;/svg&gt;&lt;input class="input input--filled" id="fx2" placeholder="Search keepers"&gt;
+    &lt;/div&gt;
+    &lt;span class="field__hint"&gt;Filled style, for use on white cards.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="field"&gt;
+    &lt;label class="field__label field__label--lg" for="fx3"&gt;Enclosure &lt;span class="req" aria-hidden="true"&gt;*&lt;/span&gt;&lt;/label&gt;
+    &lt;div class="input-group"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-pin"/&gt;&lt;/svg&gt;&lt;input class="input input--lg" id="fx3" value="Elephant Camp · E2"&gt;
+    &lt;/div&gt;
+    &lt;span class="field__hint"&gt;Large: 52px, for the main field on a screen.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="field"&gt;
+    &lt;label class="field__label" for="fx4"&gt;Weight (kg)&lt;/label&gt;
+    &lt;input class="input input--success" id="fx4" value="3,420" aria-describedby="fx4h"&gt;&lt;span class="field__hint field__hint--success" id="fx4h"&gt;Within the normal range.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="field"&gt;
+    &lt;label class="field__label" for="fx5"&gt;Animals in enclosure&lt;/label&gt;
+    &lt;input class="input input--warning" id="fx5" value="9" aria-describedby="fx5h"&gt;&lt;span class="field__hint field__hint--warning" id="fx5h"&gt;This enclosure is planned for 8.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="field field--float"&gt;
+    &lt;label class="field__label" for="fx6"&gt;Set date&lt;/label&gt;
+    &lt;div class="input-group"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-calendar"/&gt;&lt;/svg&gt;&lt;input class="input" id="fx6" value="10 Jul 2026"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></details></div>
+<div class="doc" id="fc-search-code"><h3>Search bar</h3><h4>Classes</h4><div class="chips"><code>.search</code><code>.search--pill</code><code>.icon-btn</code><code>.icon</code><code>.is-valid</code><code>.is-invalid</code><code>.search-row</code><code>.icon-btn--line</code></div><details class="code" open><summary>Example 1 markup</summary><pre><code>&lt;div class="demo demo--col" style="max-width:440px"&gt;
+  &lt;div class="search search--pill" role="search"&gt;
+    &lt;button class="icon-btn" type="button" aria-label="Menu"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-menu"/&gt;&lt;/svg&gt;
+    &lt;/button&gt;
+    &lt;input placeholder="Search animals, sites, people" aria-label="Search"&gt;
+    &lt;button class="icon-btn" type="button" aria-label="Search"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-search"/&gt;&lt;/svg&gt;
+    &lt;/button&gt;
+    &lt;button class="icon-btn" type="button" aria-label="Scan a tag"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-scan"/&gt;&lt;/svg&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="search search--pill is-valid" role="search"&gt;
+    &lt;svg class="icon"&gt;&lt;use href="#i-search"/&gt;&lt;/svg&gt;&lt;input value="Madhav" aria-label="Search"&gt;
+    &lt;button class="icon-btn" type="button" aria-label="Clear"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-x"/&gt;&lt;/svg&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="search search--pill is-invalid" role="search"&gt;
+    &lt;svg class="icon"&gt;&lt;use href="#i-search"/&gt;&lt;/svg&gt;&lt;input value="AAID 0000" aria-label="Search" aria-invalid="true"&gt;
+    &lt;button class="icon-btn" type="button" aria-label="Clear"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-x"/&gt;&lt;/svg&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="search search--pill" role="search"&gt;
+    &lt;svg class="icon"&gt;&lt;use href="#i-search"/&gt;&lt;/svg&gt;&lt;input placeholder="Search is offline" aria-label="Search" disabled&gt;
+    &lt;button class="icon-btn" type="button" aria-label="Scan a tag" disabled&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-scan"/&gt;&lt;/svg&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="search-row"&gt;
+    &lt;label class="search"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-search"/&gt;&lt;/svg&gt;&lt;input value="Vaccination due" aria-label="Search tasks"&gt;
+    &lt;/label&gt;
+    &lt;button class="icon-btn icon-btn--line" type="button" aria-label="Filter"&gt;
+      &lt;svg class="icon"&gt;&lt;use href="#i-filter"/&gt;&lt;/svg&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></details></div></section>
+<nav class="pager" aria-label="Previous and next page"><a class="pager__prev" href="buttons.html"><svg class="icon"><use href="#i-arrow-left"/></svg><span><small>Previous</small><b>Buttons</b></span></a><a class="pager__next" href="selection.html"><span><small>Next · Components</small><b>Selection controls</b></span><svg class="icon"><use href="#i-arrow-right"/></svg></a></nav>
+</div><aside class="page-toc" id="page-toc" aria-label="On this page"></aside></div>
+<footer class="site-foot">ANTZ Design System Foundation v0.2 · <a href="../README.md">README</a> · <a href="../colors.json" download>colors.json</a></footer>
+</main>
+</div>
+<div class="toast-region" id="toasts" role="status" aria-live="polite"></div>
+<script src="../assets/site.js?v=8"></script>
+</body>
+</html>

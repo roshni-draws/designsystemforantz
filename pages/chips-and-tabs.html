@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" data-root="..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chips and tabs · ANTZ Design System Foundation</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="Chips filter or toggle and can be many at once.">
+<script>try { var t = localStorage.getItem('antz-ds-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css?v=8">
+<link rel="stylesheet" href="../components.css?v=8">
+<link rel="stylesheet" href="../assets/site.css?v=8">
+</head>
+<body data-page="chips-and-tabs">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-top"><button class="icon-btn site-menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><svg class="icon"><use href="#i-menu"/></svg></button><a class="site-brand" href="../index.html"><span class="tile-icon" aria-hidden="true"><svg class="icon"><use href="#i-grid"/></svg></span>ANTZ Foundation <small>v0.2</small></a><label class="site-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" placeholder="Search pages" aria-label="Search pages"><kbd>/</kbd></label><button class="icon-btn site-search-btn" type="button" aria-label="Search pages" data-nav-search><svg class="icon"><use href="#i-search"/></svg></button><div class="segmented segmented--pill theme-seg" role="group" aria-label="Theme"><button type="button" data-theme-set="auto" aria-pressed="true"><svg class="icon icon--sm"><use href="#i-monitor"/></svg><span>Auto</span></button><button type="button" data-theme-set="light" aria-pressed="false"><svg class="icon icon--sm"><use href="#i-sun"/></svg><span>Light</span></button><button type="button" data-theme-set="dark" aria-pressed="false"><svg class="icon icon--sm"><use href="#i-moon"/></svg><span>Dark</span></button></div></header><div class="site-scrim"></div>
+<div class="site">
+<nav class="site-nav" id="site-nav" aria-label="Documentation"><label class="search nav-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" placeholder="Search pages" aria-label="Search pages"></label><a class="nav-link" href="../index.html">Welcome</a><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-1" data-current="false"><svg class="icon"><use href="#i-home"/></svg><span>Getting started</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-1" hidden><li><a class="nav-link" href="get-started.html">Get started</a></li><li><a class="nav-link" href="principles.html">Principles</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-2" data-current="false"><svg class="icon"><use href="#i-sliders"/></svg><span>Foundations</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-2" hidden><li><a class="nav-link" href="colour.html">Colour</a></li><li><a class="nav-link" href="colour-guardrails.html">Colour guardrails</a></li><li><a class="nav-link" href="contrast.html">Contrast</a></li><li><a class="nav-link" href="type.html">Typography</a></li><li><a class="nav-link" href="spacing.html">Spacing</a></li><li><a class="nav-link" href="radii.html">Radii</a></li><li><a class="nav-link" href="elevation.html">Elevation</a></li><li><a class="nav-link" href="motion.html">Motion</a></li><li><a class="nav-link" href="icons.html">Icons</a></li><li><a class="nav-link" href="layout.html">Layout and breakpoints</a></li><li><a class="nav-link" href="responsive.html">Responsive</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="true" aria-controls="ng-3" data-current="true"><svg class="icon"><use href="#i-grid"/></svg><span>Components</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-3"><li><a class="nav-link" href="buttons.html">Buttons</a></li><li><a class="nav-link" href="text-fields.html">Text fields</a></li><li><a class="nav-link" href="selection.html">Selection controls</a></li><li><a class="nav-link" href="chips-and-tabs.html" aria-current="page">Chips and tabs</a></li><li><a class="nav-link" href="badges.html">Badges and status</a></li><li><a class="nav-link" href="avatars.html">Avatars</a></li><li><a class="nav-link" href="cards.html">Cards</a></li><li><a class="nav-link" href="list-rows.html">List rows</a></li><li><a class="nav-link" href="alerts-and-toasts.html">Alerts and toasts</a></li><li><a class="nav-link" href="menus-and-dialogs.html">Menus and dialogs</a></li><li><a class="nav-link" href="progress.html">Progress</a></li><li><a class="nav-link" href="table.html">Table</a></li><li><a class="nav-link" href="loading.html">Loading and empty</a></li><li><a class="nav-link" href="navigation.html">Navigation</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-4" data-current="false"><svg class="icon"><use href="#i-zap"/></svg><span>Pattern components</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-4" hidden><li><a class="nav-link" href="top-bar.html">Top bar and action bar</a></li><li><a class="nav-link" href="post-card.html">Post card</a></li><li><a class="nav-link" href="attachments.html">Attachments</a></li><li><a class="nav-link" href="priority.html">Priority picker</a></li><li><a class="nav-link" href="lists.html">Lists</a></li><li><a class="nav-link" href="date-picker.html">Date picker</a></li><li><a class="nav-link" href="animal-card.html">Animal card</a></li><li><a class="nav-link" href="progress-ring.html">Progress bar and ring</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-5" data-current="false"><svg class="icon"><use href="#i-trend"/></svg><span>Stat cards</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-5" hidden><li><a class="nav-link" href="stat-figures.html">Stat figures</a></li><li><a class="nav-link" href="key-insights.html">Key insights</a></li><li><a class="nav-link" href="insights-summary.html">Insights summary</a></li><li><a class="nav-link" href="site-card.html">Site card</a></li><li><a class="nav-link" href="day-week-month.html">Day, week, month</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-6" data-current="false"><svg class="icon"><use href="#i-smartphone"/></svg><span>Screens</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-6" hidden><li><a class="nav-link" href="screens.html">All screens</a></li><li><a class="nav-link" href="screen-home.html">Home</a></li><li><a class="nav-link" href="screen-housing.html">Housing</a></li><li><a class="nav-link" href="screen-people.html">Choose people</a></li><li><a class="nav-link" href="screen-task.html">Add task</a></li><li><a class="nav-link" href="screen-request.html">New request</a></li><li><a class="nav-link" href="screen-date.html">Set a date</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-7" data-current="false"><svg class="icon"><use href="#i-chat"/></svg><span>Content</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-7" hidden><li><a class="nav-link" href="voice.html">Voice and words</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-8" data-current="false"><svg class="icon"><use href="#i-download"/></svg><span>Resources</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-8" hidden><li><a class="nav-link" href="resources.html">Downloads</a></li><li><a class="nav-link" href="figma-mapping.html">Figma mapping</a></li></ul></div><p class="nav-empty" hidden>No pages match.</p></nav>
+<main class="site-main" id="main">
+<header class="page-banner"><div class="page-banner__text"><span class="t-overline">Components</span><h1 class="page-banner__title">Chips and tabs</h1><p class="page-banner__intro">Chips filter or toggle and can be many at once.</p></div><div class="page-banner__art" style="--c:var(--hue-sky)" aria-hidden="true"><svg class="icon"><use href="#i-grid"/></svg></div></header>
+<div class="page-tabs" role="tablist" aria-label="Page sections"><button role="tab" type="button" id="tab-overview" aria-controls="panel-overview" aria-selected="true" data-tab="overview">Overview</button><button role="tab" type="button" id="tab-usage" aria-controls="panel-usage" aria-selected="false" data-tab="usage" tabindex="-1">Usage</button><button role="tab" type="button" id="tab-code" aria-controls="panel-code" aria-selected="false" data-tab="code" tabindex="-1">Code</button></div>
+<div class="page-body"><div class="page-content">
+<section class="tab-panel" id="panel-overview" data-tab="overview" role="tabpanel" aria-labelledby="tab-overview"><div class="doc" id="chips">
+        <h3>Chips and segmented controls</h3>
+        <p class="lead">Chips filter or toggle and can be many at once. A segmented control picks one view; it doubles as tabs (use <code>role="tablist"</code> and <code>aria-selected</code>).</p>
+        <div class="demo">
+          <button class="chip" type="button" aria-pressed="true">All</button>
+          <button class="chip" type="button" aria-pressed="false">Apps</button>
+          <button class="chip" type="button" aria-pressed="false"><svg class="icon"><use href="#i-plug"/></svg>Integrations</button>
+          <button class="chip" type="button" aria-pressed="false">Channels</button>
+          <button class="chip" type="button" disabled>Devices</button>
+        </div>
+        <div class="demo">
+          <div class="segmented" role="tablist" aria-label="Today">
+            <button role="tab" aria-selected="true" type="button">Needs OK <span class="count count--danger">2</span></button>
+            <button role="tab" aria-selected="false" type="button">Activity <span class="count">6</span></button>
+          </div>
+          <div class="segmented segmented--pill" role="group" aria-label="Range">
+            <button type="button" aria-pressed="true">7D</button><button type="button" aria-pressed="false">30D</button><button type="button" aria-pressed="false">90D</button>
+          </div>
+        </div>
+      
+      </div>
+<div class="doc" id="fc-chips">
+        <h3>Pills and chips</h3>
+        <p class="lead">Pills are round chips for filters and picked values. A picked value can carry an avatar and a remove button; a person or team can carry a second line. Selected is always the accent: Figma's ten chip colours are not kept.</p>
+        <h4>Filter pills</h4>
+        <div class="demo">
+          <button class="chip chip--pill" type="button" aria-pressed="true">General</button>
+          <button class="chip chip--pill" type="button" aria-pressed="false">Sick</button>
+          <button class="chip chip--pill" type="button" aria-pressed="false">Obesity</button>
+          <button class="chip chip--pill" type="button" aria-pressed="false">Inactive</button>
+          <button class="chip chip--pill chip--outline" type="button" aria-pressed="false"><svg class="icon"><use href="#i-plus"/></svg>12 more</button>
+        </div>
+        <h4>Outline pills</h4>
+        <div class="demo">
+          <button class="chip chip--pill chip--outline" type="button" aria-pressed="true">Mammals</button>
+          <button class="chip chip--pill chip--outline" type="button" aria-pressed="false">Birds</button>
+          <button class="chip chip--pill chip--outline" type="button" aria-pressed="false">Reptiles</button>
+          <button class="chip chip--pill chip--outline" type="button" disabled>Fish</button>
+        </div>
+        <h4>Picked values</h4>
+        <div class="demo">
+          <span class="chip chip--pill">Reptile House<button class="chip__remove" type="button" aria-label="Remove Reptile House"><svg class="icon"><use href="#i-x"/></svg></button></span>
+          <span class="chip chip--pill"><span class="avatar avatar--sm" style="--av-bg:var(--hue-teal-soft);--av-fg:var(--hue-teal-ink)">KR</span>Kiran<button class="chip__remove" type="button" aria-label="Remove Kiran"><svg class="icon"><use href="#i-x"/></svg></button></span>
+          <span class="chip chip--person"><span class="avatar" style="--av-bg:var(--hue-navy-soft);--av-fg:var(--hue-navy-ink)"><svg class="icon icon--sm"><use href="#i-users"/></svg></span><span class="chip__text"><b>Maintenance team</b><small>Elephant Camp</small></span><button class="chip__remove" type="button" aria-label="Remove Maintenance team"><svg class="icon"><use href="#i-x"/></svg></button></span>
+        </div>
+      
+      </div>
+<div class="doc" id="fc-tabs">
+        <h3>Tabs and figure tabs</h3>
+        <p class="lead">Line tabs switch the period on a card. Figure tabs put a count over each label (Figma "Number w/ label"), so the tab doubles as a summary.</p>
+        <div class="demo demo--col" style="max-width:440px">
+          <div class="segmented segmented--line segmented--block" role="tablist" aria-label="Period"><button role="tab" type="button" aria-selected="true">Today</button><button role="tab" type="button" aria-selected="false">Yesterday</button><button role="tab" type="button" aria-selected="false">This month</button></div>
+          <div class="segmented segmented--stat segmented--block" role="tablist" aria-label="Tasks"><button role="tab" type="button" aria-selected="true"><b>12</b><span>Open</span></button><button role="tab" type="button" aria-selected="false"><b>4</b><span>Overdue</span></button><button role="tab" type="button" aria-selected="false"><b>30</b><span>Done</span></button></div>
+        </div>
+      
+      </div></section><section class="tab-panel" id="panel-usage" data-tab="usage" role="tabpanel" aria-labelledby="tab-usage" hidden><div class="doc" id="chips-usage"><h3>Chips and segmented controls</h3><div class="dd">
+          <div class="do"><b><svg class="icon icon--sm"><use href="#i-check"/></svg>Do</b><ul><li>Use chips to filter a list in place.</li><li>Use a segmented control for 2 to 4 views of the same thing.</li></ul></div>
+          <div class="dont"><b><svg class="icon icon--sm"><use href="#i-x"/></svg>Don't</b><ul><li>Use a chip as the main action.</li><li>Put more than 4 options in a segmented control.</li></ul></div>
+        </div></div>
+<div class="doc" id="fc-chips-usage"><h3>Pills and chips</h3><div class="dd">
+          <div class="do"><b><svg class="icon icon--sm"><use href="#i-check"/></svg>Do</b><ul><li>Name the item in every remove button's <code>aria-label</code>.</li><li>Use a person chip when a team needs its site under the name.</li></ul></div>
+          <div class="dont"><b><svg class="icon icon--sm"><use href="#i-x"/></svg>Don't</b><ul><li>Colour pills by category; selected is always the accent.</li><li>Wrap a chip label onto two lines.</li></ul></div>
+        </div></div>
+<div class="doc" id="fc-tabs-usage"><h3>Tabs and figure tabs</h3><div class="dd">
+          <div class="do"><b><svg class="icon icon--sm"><use href="#i-check"/></svg>Do</b><ul><li>Use line tabs inside a card to switch the period.</li><li>Use figure tabs when the count is the reason to switch.</li></ul></div>
+          <div class="dont"><b><svg class="icon icon--sm"><use href="#i-x"/></svg>Don't</b><ul><li>Use figure tabs for more than 4 options.</li><li>Put line tabs straight on the mint board.</li></ul></div>
+        </div></div></section><section class="tab-panel" id="panel-code" data-tab="code" role="tabpanel" aria-labelledby="tab-code" hidden><div class="doc" id="chips-code"><h3>Chips and segmented controls</h3><h4>Classes</h4><div class="chips"><code>.chip</code><code>.icon</code><code>.segmented</code><code>.count</code><code>.count--danger</code><code>.segmented--pill</code></div><details class="code" open><summary>Example 1 markup</summary><pre><code>&lt;div class="demo"&gt;
+  &lt;button class="chip" type="button" aria-pressed="true"&gt;All&lt;/button&gt;
+  &lt;button class="chip" type="button" aria-pressed="false"&gt;Apps&lt;/button&gt;
+  &lt;button class="chip" type="button" aria-pressed="false"&gt;
+    &lt;svg class="icon"&gt;&lt;use href="#i-plug"/&gt;&lt;/svg&gt;Integrations
+  &lt;/button&gt;
+  &lt;button class="chip" type="button" aria-pressed="false"&gt;Channels&lt;/button&gt;
+  &lt;button class="chip" type="button" disabled&gt;Devices&lt;/button&gt;
+&lt;/div&gt;</code></pre></details><details class="code"><summary>Example 2 markup</summary><pre><code>&lt;div class="demo"&gt;
+  &lt;div class="segmented" role="tablist" aria-label="Today"&gt;
+    &lt;button role="tab" aria-selected="true" type="button"&gt;Needs OK &lt;span class="count count--danger"&gt;2&lt;/span&gt;&lt;/button&gt;
+    &lt;button role="tab" aria-selected="false" type="button"&gt;Activity &lt;span class="count"&gt;6&lt;/span&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="segmented segmented--pill" role="group" aria-label="Range"&gt;
+    &lt;button type="button" aria-pressed="true"&gt;7D&lt;/button&gt;
+    &lt;button type="button" aria-pressed="false"&gt;30D&lt;/button&gt;
+    &lt;button type="button" aria-pressed="false"&gt;90D&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></details></div>
+<div class="doc" id="fc-chips-code"><h3>Pills and chips</h3><h4>Classes</h4><div class="chips"><code>.chip</code><code>.chip--pill</code><code>.chip--outline</code><code>.icon</code><code>.chip__remove</code><code>.avatar</code><code>.avatar--sm</code><code>.chip--person</code><code>.icon--sm</code><code>.chip__text</code></div><details class="code" open><summary>Example 1 markup</summary><pre><code>&lt;div class="demo"&gt;
+  &lt;button class="chip chip--pill" type="button" aria-pressed="true"&gt;General&lt;/button&gt;
+  &lt;button class="chip chip--pill" type="button" aria-pressed="false"&gt;Sick&lt;/button&gt;
+  &lt;button class="chip chip--pill" type="button" aria-pressed="false"&gt;Obesity&lt;/button&gt;
+  &lt;button class="chip chip--pill" type="button" aria-pressed="false"&gt;Inactive&lt;/button&gt;
+  &lt;button class="chip chip--pill chip--outline" type="button" aria-pressed="false"&gt;
+    &lt;svg class="icon"&gt;&lt;use href="#i-plus"/&gt;&lt;/svg&gt;12 more
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre></details><details class="code"><summary>Example 2 markup</summary><pre><code>&lt;div class="demo"&gt;
+  &lt;button class="chip chip--pill chip--outline" type="button" aria-pressed="true"&gt;Mammals&lt;/button&gt;
+  &lt;button class="chip chip--pill chip--outline" type="button" aria-pressed="false"&gt;Birds&lt;/button&gt;
+  &lt;button class="chip chip--pill chip--outline" type="button" aria-pressed="false"&gt;Reptiles&lt;/button&gt;
+  &lt;button class="chip chip--pill chip--outline" type="button" disabled&gt;Fish&lt;/button&gt;
+&lt;/div&gt;</code></pre></details><details class="code"><summary>Example 3 markup</summary><pre><code>&lt;div class="demo"&gt;
+  &lt;span class="chip chip--pill"&gt;Reptile House
+  &lt;button class="chip__remove" type="button" aria-label="Remove Reptile House"&gt;
+    &lt;svg class="icon"&gt;&lt;use href="#i-x"/&gt;&lt;/svg&gt;
+  &lt;/button&gt;
+  &lt;/span&gt; &lt;span class="chip chip--pill"&gt;&lt;span class="avatar avatar--sm" style="--av-bg:var(--hue-teal-soft);--av-fg:var(--hue-teal-ink)"&gt;KR&lt;/span&gt;Kiran
+  &lt;button class="chip__remove" type="button" aria-label="Remove Kiran"&gt;
+    &lt;svg class="icon"&gt;&lt;use href="#i-x"/&gt;&lt;/svg&gt;
+  &lt;/button&gt;
+  &lt;/span&gt; &lt;span class="chip chip--person"&gt;&lt;span class="avatar" style="--av-bg:var(--hue-navy-soft);--av-fg:var(--hue-navy-ink)"&gt;&lt;svg class="icon icon--sm"&gt;&lt;use href="#i-users"/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span class="chip__text"&gt;&lt;b&gt;Maintenance team&lt;/b&gt;&lt;small&gt;Elephant Camp&lt;/small&gt;&lt;/span&gt;
+  &lt;button class="chip__remove" type="button" aria-label="Remove Maintenance team"&gt;
+    &lt;svg class="icon"&gt;&lt;use href="#i-x"/&gt;&lt;/svg&gt;
+  &lt;/button&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre></details></div>
+<div class="doc" id="fc-tabs-code"><h3>Tabs and figure tabs</h3><h4>Classes</h4><div class="chips"><code>.segmented</code><code>.segmented--line</code><code>.segmented--block</code><code>.segmented--stat</code></div><details class="code" open><summary>Example 1 markup</summary><pre><code>&lt;div class="demo demo--col" style="max-width:440px"&gt;
+  &lt;div class="segmented segmented--line segmented--block" role="tablist" aria-label="Period"&gt;
+    &lt;button role="tab" type="button" aria-selected="true"&gt;Today&lt;/button&gt;
+    &lt;button role="tab" type="button" aria-selected="false"&gt;Yesterday&lt;/button&gt;
+    &lt;button role="tab" type="button" aria-selected="false"&gt;This month&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="segmented segmented--stat segmented--block" role="tablist" aria-label="Tasks"&gt;
+    &lt;button role="tab" type="button" aria-selected="true"&gt;
+      &lt;b&gt;12&lt;/b&gt;&lt;span&gt;Open&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button role="tab" type="button" aria-selected="false"&gt;
+      &lt;b&gt;4&lt;/b&gt;&lt;span&gt;Overdue&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button role="tab" type="button" aria-selected="false"&gt;
+      &lt;b&gt;30&lt;/b&gt;&lt;span&gt;Done&lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></details></div></section>
+<nav class="pager" aria-label="Previous and next page"><a class="pager__prev" href="selection.html"><svg class="icon"><use href="#i-arrow-left"/></svg><span><small>Previous</small><b>Selection controls</b></span></a><a class="pager__next" href="badges.html"><span><small>Next · Components</small><b>Badges and status</b></span><svg class="icon"><use href="#i-arrow-right"/></svg></a></nav>
+</div><aside class="page-toc" id="page-toc" aria-label="On this page"></aside></div>
+<footer class="site-foot">ANTZ Design System Foundation v0.2 · <a href="../README.md">README</a> · <a href="../colors.json" download>colors.json</a></footer>
+</main>
+</div>
+<div class="toast-region" id="toasts" role="status" aria-live="polite"></div>
+<script src="../assets/site.js?v=8"></script>
+</body>
+</html>

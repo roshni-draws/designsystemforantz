@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en" data-root="..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selection controls · ANTZ Design System Foundation</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="Checkbox for many, radio for one, switch for a setting that takes effect at once, choice card when each option needs a line of explanation.">
+<script>try { var t = localStorage.getItem('antz-ds-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css?v=8">
+<link rel="stylesheet" href="../components.css?v=8">
+<link rel="stylesheet" href="../assets/site.css?v=8">
+</head>
+<body data-page="selection">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-top"><button class="icon-btn site-menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><svg class="icon"><use href="#i-menu"/></svg></button><a class="site-brand" href="../index.html"><span class="tile-icon" aria-hidden="true"><svg class="icon"><use href="#i-grid"/></svg></span>ANTZ Foundation <small>v0.2</small></a><label class="site-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" placeholder="Search pages" aria-label="Search pages"><kbd>/</kbd></label><button class="icon-btn site-search-btn" type="button" aria-label="Search pages" data-nav-search><svg class="icon"><use href="#i-search"/></svg></button><div class="segmented segmented--pill theme-seg" role="group" aria-label="Theme"><button type="button" data-theme-set="auto" aria-pressed="true"><svg class="icon icon--sm"><use href="#i-monitor"/></svg><span>Auto</span></button><button type="button" data-theme-set="light" aria-pressed="false"><svg class="icon icon--sm"><use href="#i-sun"/></svg><span>Light</span></button><button type="button" data-theme-set="dark" aria-pressed="false"><svg class="icon icon--sm"><use href="#i-moon"/></svg><span>Dark</span></button></div></header><div class="site-scrim"></div>
+<div class="site">
+<nav class="site-nav" id="site-nav" aria-label="Documentation"><label class="search nav-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" placeholder="Search pages" aria-label="Search pages"></label><a class="nav-link" href="../index.html">Welcome</a><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-1" data-current="false"><svg class="icon"><use href="#i-home"/></svg><span>Getting started</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-1" hidden><li><a class="nav-link" href="get-started.html">Get started</a></li><li><a class="nav-link" href="principles.html">Principles</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-2" data-current="false"><svg class="icon"><use href="#i-sliders"/></svg><span>Foundations</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-2" hidden><li><a class="nav-link" href="colour.html">Colour</a></li><li><a class="nav-link" href="colour-guardrails.html">Colour guardrails</a></li><li><a class="nav-link" href="contrast.html">Contrast</a></li><li><a class="nav-link" href="type.html">Typography</a></li><li><a class="nav-link" href="spacing.html">Spacing</a></li><li><a class="nav-link" href="radii.html">Radii</a></li><li><a class="nav-link" href="elevation.html">Elevation</a></li><li><a class="nav-link" href="motion.html">Motion</a></li><li><a class="nav-link" href="icons.html">Icons</a></li><li><a class="nav-link" href="layout.html">Layout and breakpoints</a></li><li><a class="nav-link" href="responsive.html">Responsive</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="true" aria-controls="ng-3" data-current="true"><svg class="icon"><use href="#i-grid"/></svg><span>Components</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-3"><li><a class="nav-link" href="buttons.html">Buttons</a></li><li><a class="nav-link" href="text-fields.html">Text fields</a></li><li><a class="nav-link" href="selection.html" aria-current="page">Selection controls</a></li><li><a class="nav-link" href="chips-and-tabs.html">Chips and tabs</a></li><li><a class="nav-link" href="badges.html">Badges and status</a></li><li><a class="nav-link" href="avatars.html">Avatars</a></li><li><a class="nav-link" href="cards.html">Cards</a></li><li><a class="nav-link" href="list-rows.html">List rows</a></li><li><a class="nav-link" href="alerts-and-toasts.html">Alerts and toasts</a></li><li><a class="nav-link" href="menus-and-dialogs.html">Menus and dialogs</a></li><li><a class="nav-link" href="progress.html">Progress</a></li><li><a class="nav-link" href="table.html">Table</a></li><li><a class="nav-link" href="loading.html">Loading and empty</a></li><li><a class="nav-link" href="navigation.html">Navigation</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-4" data-current="false"><svg class="icon"><use href="#i-zap"/></svg><span>Pattern components</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-4" hidden><li><a class="nav-link" href="top-bar.html">Top bar and action bar</a></li><li><a class="nav-link" href="post-card.html">Post card</a></li><li><a class="nav-link" href="attachments.html">Attachments</a></li><li><a class="nav-link" href="priority.html">Priority picker</a></li><li><a class="nav-link" href="lists.html">Lists</a></li><li><a class="nav-link" href="date-picker.html">Date picker</a></li><li><a class="nav-link" href="animal-card.html">Animal card</a></li><li><a class="nav-link" href="progress-ring.html">Progress bar and ring</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-5" data-current="false"><svg class="icon"><use href="#i-trend"/></svg><span>Stat cards</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-5" hidden><li><a class="nav-link" href="stat-figures.html">Stat figures</a></li><li><a class="nav-link" href="key-insights.html">Key insights</a></li><li><a class="nav-link" href="insights-summary.html">Insights summary</a></li><li><a class="nav-link" href="site-card.html">Site card</a></li><li><a class="nav-link" href="day-week-month.html">Day, week, month</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-6" data-current="false"><svg class="icon"><use href="#i-smartphone"/></svg><span>Screens</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-6" hidden><li><a class="nav-link" href="screens.html">All screens</a></li><li><a class="nav-link" href="screen-home.html">Home</a></li><li><a class="nav-link" href="screen-housing.html">Housing</a></li><li><a class="nav-link" href="screen-people.html">Choose people</a></li><li><a class="nav-link" href="screen-task.html">Add task</a></li><li><a class="nav-link" href="screen-request.html">New request</a></li><li><a class="nav-link" href="screen-date.html">Set a date</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-7" data-current="false"><svg class="icon"><use href="#i-chat"/></svg><span>Content</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-7" hidden><li><a class="nav-link" href="voice.html">Voice and words</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-8" data-current="false"><svg class="icon"><use href="#i-download"/></svg><span>Resources</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-8" hidden><li><a class="nav-link" href="resources.html">Downloads</a></li><li><a class="nav-link" href="figma-mapping.html">Figma mapping</a></li></ul></div><p class="nav-empty" hidden>No pages match.</p></nav>
+<main class="site-main" id="main">
+<header class="page-banner"><div class="page-banner__text"><span class="t-overline">Components</span><h1 class="page-banner__title">Selection controls</h1><p class="page-banner__intro">Checkbox for many, radio for one, switch for a setting that takes effect at once, choice card when each option needs a line of explanation.</p></div><div class="page-banner__art" style="--c:var(--hue-sky)" aria-hidden="true"><svg class="icon"><use href="#i-grid"/></svg></div></header>
+<div class="page-tabs" role="tablist" aria-label="Page sections"><button role="tab" type="button" id="tab-overview" aria-controls="panel-overview" aria-selected="true" data-tab="overview">Overview</button><button role="tab" type="button" id="tab-usage" aria-controls="panel-usage" aria-selected="false" data-tab="usage" tabindex="-1">Usage</button><button role="tab" type="button" id="tab-code" aria-controls="panel-code" aria-selected="false" data-tab="code" tabindex="-1">Code</button></div>
+<div class="page-body"><div class="page-content">
+<section class="tab-panel" id="panel-overview" data-tab="overview" role="tabpanel" aria-labelledby="tab-overview"><div class="doc" id="selection">
+        <h3>Selection controls</h3>
+        <p class="lead">Checkbox for many, radio for one, switch for a setting that takes effect at once, choice card when each option needs a line of explanation.</p>
+        <div class="demo demo--grid">
+          <div class="cell"><span class="t-overline">Checkbox</span>
+            <label class="check"><input type="checkbox" checked> Footfall sensors</label>
+            <label class="check"><input type="checkbox"> Gate counters</label>
+            <label class="check"><input type="checkbox" disabled> Cameras <small>Not on this plan</small></label></div>
+          <div class="cell"><span class="t-overline">Radio</span>
+            <label class="check"><input type="radio" name="r1" checked> English</label>
+            <label class="check"><input type="radio" name="r1"> Kannada</label>
+            <label class="check"><input type="radio" name="r1" disabled> Hindi</label></div>
+          <div class="cell"><span class="t-overline">Switch</span>
+            <label class="check" style="align-items:center"><span class="switch"><input type="checkbox" checked><span></span></span> Quiet hours</label>
+            <label class="check" style="align-items:center"><span class="switch"><input type="checkbox"><span></span></span> Morning summary</label>
+            <label class="check" style="align-items:center"><span class="switch"><input type="checkbox" disabled><span></span></span> Voice replies</label></div>
+          <div class="cell"><span class="t-overline">Choice card</span>
+            <label class="choice"><input type="radio" name="c1" checked><b>Just me</b><small>Only you see this</small></label>
+            <label class="choice"><input type="radio" name="c1"><b>My team</b><small>Teammates can use it</small></label></div>
+        </div>
+      
+      </div>
+<div class="doc" id="fc-groups">
+        <h3>Option groups</h3>
+        <p class="lead">Radios or checkboxes under one legend, with a hint or an error for the whole group (Figma "Radio w/list" and "Checkbox w/list"). Two choice cards side by side make a small either-or.</p>
+        <div class="demo demo--grid">
+          <fieldset class="fieldset"><legend>Feeding schedule <button class="field__help" type="button" aria-label="About feeding schedules"><svg class="icon"><use href="#i-help"/></svg></button></legend>
+            <label class="check"><input type="radio" name="fs1" checked> Once a day</label>
+            <label class="check"><input type="radio" name="fs1"> Twice a day</label>
+            <label class="check"><input type="radio" name="fs1"> Every other day</label>
+            <span class="field__hint">Applies from tomorrow's first feed.</span></fieldset>
+          <fieldset class="fieldset is-invalid" aria-describedby="fs2e"><legend>Symptoms seen <span class="req" aria-hidden="true">*</span></legend>
+            <label class="check"><input type="checkbox"> Not eating</label>
+            <label class="check"><input type="checkbox"> Limping</label>
+            <label class="check"><input type="checkbox"> Low energy</label>
+            <span class="field__error" id="fs2e"><svg class="icon"><use href="#i-alert"/></svg>Pick at least one symptom</span></fieldset>
+          <fieldset class="fieldset"><legend>Share with</legend>
+            <div class="choice-row">
+              <label class="choice"><input type="radio" name="fs3"><b>People</b><small>Pick by name</small></label>
+              <label class="choice"><input type="radio" name="fs3" checked><b>Teams</b><small>Everyone in it</small></label>
+            </div></fieldset>
+        </div>
+      
+      </div></section><section class="tab-panel" id="panel-usage" data-tab="usage" role="tabpanel" aria-labelledby="tab-usage" hidden><div class="doc" id="selection-usage"><h3>Selection controls</h3><div class="dd">
+          <div class="do"><b><svg class="icon icon--sm"><use href="#i-check"/></svg>Do</b><ul><li>Use a switch only when the change applies at once.</li><li>Use a choice card when each option needs a line of explanation.</li></ul></div>
+          <div class="dont"><b><svg class="icon icon--sm"><use href="#i-x"/></svg>Don't</b><ul><li>Use checkboxes for a pick-one question.</li><li>Disable an option without saying why.</li></ul></div>
+        </div></div>
+<div class="doc" id="fc-groups-usage"><h3>Option groups</h3><div class="dd">
+          <div class="do"><b><svg class="icon icon--sm"><use href="#i-check"/></svg>Do</b><ul><li>Put the error under the whole group, not under one option.</li><li>Mark a required group in its legend.</li></ul></div>
+          <div class="dont"><b><svg class="icon icon--sm"><use href="#i-x"/></svg>Don't</b><ul><li>Make a group of one; use a single checkbox.</li><li>Mix radios and checkboxes in one group.</li></ul></div>
+        </div></div></section><section class="tab-panel" id="panel-code" data-tab="code" role="tabpanel" aria-labelledby="tab-code" hidden><div class="doc" id="selection-code"><h3>Selection controls</h3><h4>Classes</h4><div class="chips"><code>.t-overline</code><code>.check</code><code>.switch</code><code>.choice</code></div><details class="code" open><summary>Example 1 markup</summary><pre><code>&lt;div class="demo demo--grid"&gt;
+  &lt;div class="cell"&gt;
+    &lt;span class="t-overline"&gt;Checkbox&lt;/span&gt;
+    &lt;label class="check"&gt;
+      &lt;input type="checkbox" checked&gt; Footfall sensors
+    &lt;/label&gt;
+    &lt;label class="check"&gt;
+      &lt;input type="checkbox"&gt; Gate counters
+    &lt;/label&gt;
+    &lt;label class="check"&gt;
+      &lt;input type="checkbox" disabled&gt; Cameras &lt;small&gt;Not on this plan&lt;/small&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="cell"&gt;
+    &lt;span class="t-overline"&gt;Radio&lt;/span&gt;
+    &lt;label class="check"&gt;
+      &lt;input type="radio" name="r1" checked&gt; English
+    &lt;/label&gt;
+    &lt;label class="check"&gt;
+      &lt;input type="radio" name="r1"&gt; Kannada
+    &lt;/label&gt;
+    &lt;label class="check"&gt;
+      &lt;input type="radio" name="r1" disabled&gt; Hindi
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="cell"&gt;
+    &lt;span class="t-overline"&gt;Switch&lt;/span&gt;
+    &lt;label class="check" style="align-items:center"&gt;
+      &lt;span class="switch"&gt;&lt;input type="checkbox" checked&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt; Quiet hours
+    &lt;/label&gt;
+    &lt;label class="check" style="align-items:center"&gt;
+      &lt;span class="switch"&gt;&lt;input type="checkbox"&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt; Morning summary
+    &lt;/label&gt;
+    &lt;label class="check" style="align-items:center"&gt;
+      &lt;span class="switch"&gt;&lt;input type="checkbox" disabled&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt; Voice replies
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="cell"&gt;
+    &lt;span class="t-overline"&gt;Choice card&lt;/span&gt;
+    &lt;label class="choice"&gt;
+      &lt;input type="radio" name="c1" checked&gt;&lt;b&gt;Just me&lt;/b&gt;&lt;small&gt;Only you see this&lt;/small&gt;
+    &lt;/label&gt;
+    &lt;label class="choice"&gt;
+      &lt;input type="radio" name="c1"&gt;&lt;b&gt;My team&lt;/b&gt;&lt;small&gt;Teammates can use it&lt;/small&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></details></div>
+<div class="doc" id="fc-groups-code"><h3>Option groups</h3><h4>Classes</h4><div class="chips"><code>.fieldset</code><code>.field__help</code><code>.icon</code><code>.check</code><code>.field__hint</code><code>.is-invalid</code><code>.req</code><code>.field__error</code><code>.choice-row</code><code>.choice</code></div><details class="code" open><summary>Example 1 markup</summary><pre><code>&lt;div class="demo demo--grid"&gt;
+  &lt;fieldset class="fieldset"&gt;
+    &lt;legend&gt;
+      Feeding schedule
+      &lt;button class="field__help" type="button" aria-label="About feeding schedules"&gt;
+        &lt;svg class="icon"&gt;&lt;use href="#i-help"/&gt;&lt;/svg&gt;
+      &lt;/button&gt;
+    &lt;/legend&gt;
+    &lt;label class="check"&gt;
+      &lt;input type="radio" name="fs1" checked&gt; Once a day
+    &lt;/label&gt;
+    &lt;label class="check"&gt;
+      &lt;input type="radio" name="fs1"&gt; Twice a day
+    &lt;/label&gt;
+    &lt;label class="check"&gt;
+      &lt;input type="radio" name="fs1"&gt; Every other day
+    &lt;/label&gt;
+    &lt;span class="field__hint"&gt;Applies from tomorrow's first feed.&lt;/span&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class="fieldset is-invalid" aria-describedby="fs2e"&gt;
+    &lt;legend&gt;Symptoms seen &lt;span class="req" aria-hidden="true"&gt;*&lt;/span&gt;&lt;/legend&gt;
+    &lt;label class="check"&gt;
+      &lt;input type="checkbox"&gt; Not eating
+    &lt;/label&gt;
+    &lt;label class="check"&gt;
+      &lt;input type="checkbox"&gt; Limping
+    &lt;/label&gt;
+    &lt;label class="check"&gt;
+      &lt;input type="checkbox"&gt; Low energy
+    &lt;/label&gt;
+    &lt;span class="field__error" id="fs2e"&gt;&lt;svg class="icon"&gt;&lt;use href="#i-alert"/&gt;&lt;/svg&gt;Pick at least one symptom&lt;/span&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class="fieldset"&gt;
+    &lt;legend&gt;Share with&lt;/legend&gt;
+    &lt;div class="choice-row"&gt;
+      &lt;label class="choice"&gt;
+        &lt;input type="radio" name="fs3"&gt;&lt;b&gt;People&lt;/b&gt;&lt;small&gt;Pick by name&lt;/small&gt;
+      &lt;/label&gt;
+      &lt;label class="choice"&gt;
+        &lt;input type="radio" name="fs3" checked&gt;&lt;b&gt;Teams&lt;/b&gt;&lt;small&gt;Everyone in it&lt;/small&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre></details></div></section>
+<nav class="pager" aria-label="Previous and next page"><a class="pager__prev" href="text-fields.html"><svg class="icon"><use href="#i-arrow-left"/></svg><span><small>Previous</small><b>Text fields</b></span></a><a class="pager__next" href="chips-and-tabs.html"><span><small>Next · Components</small><b>Chips and tabs</b></span><svg class="icon"><use href="#i-arrow-right"/></svg></a></nav>
+</div><aside class="page-toc" id="page-toc" aria-label="On this page"></aside></div>
+<footer class="site-foot">ANTZ Design System Foundation v0.2 · <a href="../README.md">README</a> · <a href="../colors.json" download>colors.json</a></footer>
+</main>
+</div>
+<div class="toast-region" id="toasts" role="status" aria-live="polite"></div>
+<script src="../assets/site.js?v=8"></script>
+</body>
+</html>

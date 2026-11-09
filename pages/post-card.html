@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" data-root="..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Post card · ANTZ Design System Foundation</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="The Figma &quot;Placeholder Card&quot;: an announcement or an important notice in the team feed.">
+<script>try { var t = localStorage.getItem('antz-ds-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css?v=8">
+<link rel="stylesheet" href="../components.css?v=8">
+<link rel="stylesheet" href="../assets/site.css?v=8">
+</head>
+<body data-page="post-card">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-top"><button class="icon-btn site-menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><svg class="icon"><use href="#i-menu"/></svg></button><a class="site-brand" href="../index.html"><span class="tile-icon" aria-hidden="true"><svg class="icon"><use href="#i-grid"/></svg></span>ANTZ Foundation <small>v0.2</small></a><label class="site-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" placeholder="Search pages" aria-label="Search pages"><kbd>/</kbd></label><button class="icon-btn site-search-btn" type="button" aria-label="Search pages" data-nav-search><svg class="icon"><use href="#i-search"/></svg></button><div class="segmented segmented--pill theme-seg" role="group" aria-label="Theme"><button type="button" data-theme-set="auto" aria-pressed="true"><svg class="icon icon--sm"><use href="#i-monitor"/></svg><span>Auto</span></button><button type="button" data-theme-set="light" aria-pressed="false"><svg class="icon icon--sm"><use href="#i-sun"/></svg><span>Light</span></button><button type="button" data-theme-set="dark" aria-pressed="false"><svg class="icon icon--sm"><use href="#i-moon"/></svg><span>Dark</span></button></div></header><div class="site-scrim"></div>
+<div class="site">
+<nav class="site-nav" id="site-nav" aria-label="Documentation"><label class="search nav-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" placeholder="Search pages" aria-label="Search pages"></label><a class="nav-link" href="../index.html">Welcome</a><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-1" data-current="false"><svg class="icon"><use href="#i-home"/></svg><span>Getting started</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-1" hidden><li><a class="nav-link" href="get-started.html">Get started</a></li><li><a class="nav-link" href="principles.html">Principles</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-2" data-current="false"><svg class="icon"><use href="#i-sliders"/></svg><span>Foundations</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-2" hidden><li><a class="nav-link" href="colour.html">Colour</a></li><li><a class="nav-link" href="colour-guardrails.html">Colour guardrails</a></li><li><a class="nav-link" href="contrast.html">Contrast</a></li><li><a class="nav-link" href="type.html">Typography</a></li><li><a class="nav-link" href="spacing.html">Spacing</a></li><li><a class="nav-link" href="radii.html">Radii</a></li><li><a class="nav-link" href="elevation.html">Elevation</a></li><li><a class="nav-link" href="motion.html">Motion</a></li><li><a class="nav-link" href="icons.html">Icons</a></li><li><a class="nav-link" href="layout.html">Layout and breakpoints</a></li><li><a class="nav-link" href="responsive.html">Responsive</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-3" data-current="false"><svg class="icon"><use href="#i-grid"/></svg><span>Components</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-3" hidden><li><a class="nav-link" href="buttons.html">Buttons</a></li><li><a class="nav-link" href="text-fields.html">Text fields</a></li><li><a class="nav-link" href="selection.html">Selection controls</a></li><li><a class="nav-link" href="chips-and-tabs.html">Chips and tabs</a></li><li><a class="nav-link" href="badges.html">Badges and status</a></li><li><a class="nav-link" href="avatars.html">Avatars</a></li><li><a class="nav-link" href="cards.html">Cards</a></li><li><a class="nav-link" href="list-rows.html">List rows</a></li><li><a class="nav-link" href="alerts-and-toasts.html">Alerts and toasts</a></li><li><a class="nav-link" href="menus-and-dialogs.html">Menus and dialogs</a></li><li><a class="nav-link" href="progress.html">Progress</a></li><li><a class="nav-link" href="table.html">Table</a></li><li><a class="nav-link" href="loading.html">Loading and empty</a></li><li><a class="nav-link" href="navigation.html">Navigation</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="true" aria-controls="ng-4" data-current="true"><svg class="icon"><use href="#i-zap"/></svg><span>Pattern components</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-4"><li><a class="nav-link" href="top-bar.html">Top bar and action bar</a></li><li><a class="nav-link" href="post-card.html" aria-current="page">Post card</a></li><li><a class="nav-link" href="attachments.html">Attachments</a></li><li><a class="nav-link" href="priority.html">Priority picker</a></li><li><a class="nav-link" href="lists.html">Lists</a></li><li><a class="nav-link" href="date-picker.html">Date picker</a></li><li><a class="nav-link" href="animal-card.html">Animal card</a></li><li><a class="nav-link" href="progress-ring.html">Progress bar and ring</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-5" data-current="false"><svg class="icon"><use href="#i-trend"/></svg><span>Stat cards</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-5" hidden><li><a class="nav-link" href="stat-figures.html">Stat figures</a></li><li><a class="nav-link" href="key-insights.html">Key insights</a></li><li><a class="nav-link" href="insights-summary.html">Insights summary</a></li><li><a class="nav-link" href="site-card.html">Site card</a></li><li><a class="nav-link" href="day-week-month.html">Day, week, month</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-6" data-current="false"><svg class="icon"><use href="#i-smartphone"/></svg><span>Screens</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-6" hidden><li><a class="nav-link" href="screens.html">All screens</a></li><li><a class="nav-link" href="screen-home.html">Home</a></li><li><a class="nav-link" href="screen-housing.html">Housing</a></li><li><a class="nav-link" href="screen-people.html">Choose people</a></li><li><a class="nav-link" href="screen-task.html">Add task</a></li><li><a class="nav-link" href="screen-request.html">New request</a></li><li><a class="nav-link" href="screen-date.html">Set a date</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-7" data-current="false"><svg class="icon"><use href="#i-chat"/></svg><span>Content</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-7" hidden><li><a class="nav-link" href="voice.html">Voice and words</a></li></ul></div><div class="nav-group"><button class="nav-group__toggle" type="button" aria-expanded="false" aria-controls="ng-8" data-current="false"><svg class="icon"><use href="#i-download"/></svg><span>Resources</span><svg class="icon"><use href="#i-chevron-down"/></svg></button><ul class="nav-group__list" id="ng-8" hidden><li><a class="nav-link" href="resources.html">Downloads</a></li><li><a class="nav-link" href="figma-mapping.html">Figma mapping</a></li></ul></div><p class="nav-empty" hidden>No pages match.</p></nav>
+<main class="site-main" id="main">
+<header class="page-banner"><div class="page-banner__text"><span class="t-overline">Pattern components</span><h1 class="page-banner__title">Post card</h1><p class="page-banner__intro">The Figma "Placeholder Card": an announcement or an important notice in the team feed.</p></div><div class="page-banner__art" style="--c:var(--hue-violet)" aria-hidden="true"><svg class="icon"><use href="#i-zap"/></svg></div></header>
+<div class="page-tabs" role="tablist" aria-label="Page sections"><button role="tab" type="button" id="tab-overview" aria-controls="panel-overview" aria-selected="true" data-tab="overview">Overview</button><button role="tab" type="button" id="tab-usage" aria-controls="panel-usage" aria-selected="false" data-tab="usage" tabindex="-1">Usage</button><button role="tab" type="button" id="tab-code" aria-controls="panel-code" aria-selected="false" data-tab="code" tabindex="-1">Code</button></div>
+<div class="page-body"><div class="page-content">
+<section class="tab-panel" id="panel-overview" data-tab="overview" role="tabpanel" aria-labelledby="tab-overview"><div class="doc" id="p-post">
+        <h3>Post card</h3>
+        <p class="lead">The Figma "Placeholder Card": an announcement or an important notice in the team feed. Important posts get a rail beside the text. Header says who and when; body has the title, up to three lines of text and an optional photo; footer holds reactions and who has seen it.</p>
+        <ol class="anatomy"><li>Header: icon tile or avatar, title, meta, status, more</li><li>Meta line: author, where it applies</li><li>Title and text, clamped to 3 lines</li><li>Media (optional)</li><li>Footer: reactions, seen by or "Responded"</li></ol>
+        <div class="demo demo--canvas demo--grid">
+          <article class="post">
+            <div class="post__head"><span class="tile-icon" style="--c:var(--hue-teal)"><svg class="icon"><use href="#i-megaphone"/></svg></span><span class="post__who"><b>Announcement</b><span>Animal care · 2h ago</span></span><button class="icon-btn icon-btn--ghost icon-btn--sm" type="button" aria-label="More"><svg class="icon"><use href="#i-more-v"/></svg></button></div>
+            <div class="post__body"><span class="post__meta"><span><svg class="icon"><use href="#i-user"/></svg>Kiran, Habitat team</span><span><svg class="icon"><use href="#i-pin"/></svg>All sites</span></span><h4 class="post__title">Feeding moves to 7am from Monday</h4><p class="post__text">Keepers at every site start the first feed an hour earlier while the rains last. Log any animal that refuses food in the daily report.</p><div class="media" role="img" aria-label="Photo placeholder"><svg class="icon"><use href="#i-image"/></svg></div></div>
+            <div class="post__foot"><button class="btn btn--ghost btn--sm" type="button"><svg class="icon"><use href="#i-heart"/></svg>12</button><button class="btn btn--ghost btn--sm" type="button"><svg class="icon"><use href="#i-chat"/></svg>4</button><span class="avatar-stack" aria-label="Seen by 7 people"><span class="avatar avatar--sm">SI</span><span class="avatar avatar--sm" style="--av-bg:var(--hue-teal-soft);--av-fg:var(--hue-teal-ink)">RA</span><span class="avatar avatar--sm" style="--av-bg:var(--color-surface-muted);--av-fg:var(--color-text-secondary)">+5</span></span></div>
+          </article>
+          <article class="post post--important">
+            <div class="post__head"><span class="tile-icon" style="--c:var(--color-signal-danger)"><svg class="icon"><use href="#i-alert"/></svg></span><span class="post__who"><b>Important</b><span>Veterinary · 08:40</span></span><span class="status status--danger">Action needed</span><button class="icon-btn icon-btn--ghost icon-btn--sm" type="button" aria-label="More"><svg class="icon"><use href="#i-more-v"/></svg></button></div>
+            <div class="post__body"><span class="post__meta"><span><svg class="icon"><use href="#i-user"/></svg>Sita, Vet team</span><span><svg class="icon"><use href="#i-pin"/></svg>Bird Aviary</span></span><h4 class="post__title">Bird flu check before Friday</h4><p class="post__text">Every keeper at the aviary needs to confirm the swab list for their section. The vet team starts the round at 10am.</p></div>
+            <div class="post__foot"><button class="btn btn--ghost btn--sm" type="button"><svg class="icon"><use href="#i-chat"/></svg>Reply</button><span class="post__end"><svg class="icon icon--sm"><use href="#i-check"/></svg>Responded</span></div>
+          </article>
+          <article class="post is-cancelled">
+            <div class="post__head"><span class="avatar" style="--av-bg:var(--hue-amber-soft);--av-fg:var(--hue-amber-ink)">RV</span><span class="post__who"><b>Ravi</b><span>Visitor team · Yesterday</span></span><span class="status">Cancelled</span></div>
+            <div class="post__body"><h4 class="post__title">Night walk on Saturday</h4><p class="post__text">The night walk is off this week because of the storm warning. Bookings move to next Saturday.</p></div>
+          </article>
+        </div>
+      
+      </div></section><section class="tab-panel" id="panel-usage" data-tab="usage" role="tabpanel" aria-labelledby="tab-usage" hidden><div class="doc" id="p-post-usage"><h3>Post card</h3><div class="dd">
+          <div class="do"><b><svg class="icon icon--sm"><use href="#i-check"/></svg>Do</b><ul><li>Mark important posts with a status chip and the rail beside the text.</li><li>Clamp text to three lines; open the full post on tap.</li></ul></div>
+          <div class="dont"><b><svg class="icon icon--sm"><use href="#i-x"/></svg>Don't</b><ul><li>Run a stripe down the card's outer edge.</li><li>Use the important style for routine posts.</li></ul><div class="eg"><span class="t-overline">Wrong</span><div class="row" style="background:var(--color-danger-bg);box-shadow:inset 3px 0 0 var(--color-signal-danger)"><span class="row__body"><span class="row__title">Outer edge stripe</span><span class="row__meta">Bends round the corner</span></span></div></div></div>
+        </div></div></section><section class="tab-panel" id="panel-code" data-tab="code" role="tabpanel" aria-labelledby="tab-code" hidden><div class="doc" id="p-post-code"><h3>Post card</h3><h4>Classes</h4><div class="chips"><code>.post</code><code>.post__head</code><code>.tile-icon</code><code>.icon</code><code>.post__who</code><code>.icon-btn</code><code>.icon-btn--ghost</code><code>.icon-btn--sm</code><code>.post__body</code><code>.post__meta</code><code>.post__title</code><code>.post__text</code><code>.media</code><code>.post__foot</code><code>.btn</code><code>.btn--ghost</code><code>.btn--sm</code><code>.avatar-stack</code><code>.avatar</code><code>.avatar--sm</code><code>.post--important</code><code>.status</code><code>.status--danger</code><code>.post__end</code><code>.icon--sm</code><code>.is-cancelled</code></div><details class="code" open><summary>Example 1 markup</summary><pre><code>&lt;div class="demo demo--canvas demo--grid"&gt;
+  &lt;article class="post"&gt;
+    &lt;div class="post__head"&gt;
+      &lt;span class="tile-icon" style="--c:var(--hue-teal)"&gt;&lt;svg class="icon"&gt;&lt;use href="#i-megaphone"/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span class="post__who"&gt;&lt;b&gt;Announcement&lt;/b&gt;&lt;span&gt;Animal care · 2h ago&lt;/span&gt;&lt;/span&gt;
+      &lt;button class="icon-btn icon-btn--ghost icon-btn--sm" type="button" aria-label="More"&gt;
+        &lt;svg class="icon"&gt;&lt;use href="#i-more-v"/&gt;&lt;/svg&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="post__body"&gt;
+      &lt;span class="post__meta"&gt;&lt;span&gt;&lt;svg class="icon"&gt;&lt;use href="#i-user"/&gt;&lt;/svg&gt;Kiran, Habitat team&lt;/span&gt;&lt;span&gt;&lt;svg class="icon"&gt;&lt;use href="#i-pin"/&gt;&lt;/svg&gt;All sites&lt;/span&gt;&lt;/span&gt;
+      &lt;h4 class="post__title"&gt;Feeding moves to 7am from Monday&lt;/h4&gt;
+      &lt;p class="post__text"&gt;
+        Keepers at every site start the first feed an hour earlier while the rains last. Log any animal that refuses food in the daily report.
+      &lt;/p&gt;
+      &lt;div class="media" role="img" aria-label="Photo placeholder"&gt;
+        &lt;svg class="icon"&gt;&lt;use href="#i-image"/&gt;&lt;/svg&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="post__foot"&gt;
+      &lt;button class="btn btn--ghost btn--sm" type="button"&gt;
+        &lt;svg class="icon"&gt;&lt;use href="#i-heart"/&gt;&lt;/svg&gt;12
+      &lt;/button&gt;
+      &lt;button class="btn btn--ghost btn--sm" type="button"&gt;
+        &lt;svg class="icon"&gt;&lt;use href="#i-chat"/&gt;&lt;/svg&gt;4
+      &lt;/button&gt;
+      &lt;span class="avatar-stack" aria-label="Seen by 7 people"&gt;&lt;span class="avatar avatar--sm"&gt;SI&lt;/span&gt;&lt;span class="avatar avatar--sm" style="--av-bg:var(--hue-teal-soft);--av-fg:var(--hue-teal-ink)"&gt;RA&lt;/span&gt;&lt;span class="avatar avatar--sm" style="--av-bg:var(--color-surface-muted);--av-fg:var(--color-text-secondary)"&gt;+5&lt;/span&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+  &lt;article class="post post--important"&gt;
+    &lt;div class="post__head"&gt;
+      &lt;span class="tile-icon" style="--c:var(--color-signal-danger)"&gt;&lt;svg class="icon"&gt;&lt;use href="#i-alert"/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span class="post__who"&gt;&lt;b&gt;Important&lt;/b&gt;&lt;span&gt;Veterinary · 08:40&lt;/span&gt;&lt;/span&gt;&lt;span class="status status--danger"&gt;Action needed&lt;/span&gt;
+      &lt;button class="icon-btn icon-btn--ghost icon-btn--sm" type="button" aria-label="More"&gt;
+        &lt;svg class="icon"&gt;&lt;use href="#i-more-v"/&gt;&lt;/svg&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="post__body"&gt;
+      &lt;span class="post__meta"&gt;&lt;span&gt;&lt;svg class="icon"&gt;&lt;use href="#i-user"/&gt;&lt;/svg&gt;Sita, Vet team&lt;/span&gt;&lt;span&gt;&lt;svg class="icon"&gt;&lt;use href="#i-pin"/&gt;&lt;/svg&gt;Bird Aviary&lt;/span&gt;&lt;/span&gt;
+      &lt;h4 class="post__title"&gt;Bird flu check before Friday&lt;/h4&gt;
+      &lt;p class="post__text"&gt;Every keeper at the aviary needs to confirm the swab list for their section. The vet team starts the round at 10am.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="post__foot"&gt;
+      &lt;button class="btn btn--ghost btn--sm" type="button"&gt;
+        &lt;svg class="icon"&gt;&lt;use href="#i-chat"/&gt;&lt;/svg&gt;Reply
+      &lt;/button&gt;
+      &lt;span class="post__end"&gt;&lt;svg class="icon icon--sm"&gt;&lt;use href="#i-check"/&gt;&lt;/svg&gt;Responded&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+  &lt;article class="post is-cancelled"&gt;
+    &lt;div class="post__head"&gt;
+      &lt;span class="avatar" style="--av-bg:var(--hue-amber-soft);--av-fg:var(--hue-amber-ink)"&gt;RV&lt;/span&gt;&lt;span class="post__who"&gt;&lt;b&gt;Ravi&lt;/b&gt;&lt;span&gt;Visitor team · Yesterday&lt;/span&gt;&lt;/span&gt;&lt;span class="status"&gt;Cancelled&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="post__body"&gt;
+      &lt;h4 class="post__title"&gt;Night walk on Saturday&lt;/h4&gt;
+      &lt;p class="post__text"&gt;The night walk is off this week because of the storm warning. Bookings move to next Saturday.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+&lt;/div&gt;</code></pre></details></div></section>
+<nav class="pager" aria-label="Previous and next page"><a class="pager__prev" href="top-bar.html"><svg class="icon"><use href="#i-arrow-left"/></svg><span><small>Previous</small><b>Top bar and action bar</b></span></a><a class="pager__next" href="attachments.html"><span><small>Next · Pattern components</small><b>Attachments</b></span><svg class="icon"><use href="#i-arrow-right"/></svg></a></nav>
+</div><aside class="page-toc" id="page-toc" aria-label="On this page"></aside></div>
+<footer class="site-foot">ANTZ Design System Foundation v0.2 · <a href="../README.md">README</a> · <a href="../colors.json" download>colors.json</a></footer>
+</main>
+</div>
+<div class="toast-region" id="toasts" role="status" aria-live="polite"></div>
+<script src="../assets/site.js?v=8"></script>
+</body>
+</html>
