@@ -1,0 +1,2493 @@
+{
+  "$description": "Colour tokens of the ANTZ Design System Foundation, generated from tokens.css by tools/colors.py. Names match the CSS custom properties without the leading dashes. Light is the default theme; dark applies with prefers-color-scheme: dark or data-theme=\"dark\". There are no high- or medium-contrast themes yet.",
+  "primitive": {
+    "green": {
+      "$description": "Primitive green ramp",
+      "green-50": {
+        "$type": "color",
+        "$value": "#F2FAF5",
+        "$description": "Primitive green 50. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--green-50"
+          }
+        }
+      },
+      "green-100": {
+        "$type": "color",
+        "$value": "#DFF8E6",
+        "$description": "Primitive green 100. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--green-100"
+          }
+        }
+      },
+      "green-150": {
+        "$type": "color",
+        "$value": "#D9FBE6",
+        "$description": "Primitive green 150. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--green-150"
+          }
+        }
+      },
+      "green-200": {
+        "$type": "color",
+        "$value": "#CFF9DD",
+        "$description": "Primitive green 200. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--green-200"
+          }
+        }
+      },
+      "green-300": {
+        "$type": "color",
+        "$value": "#8FF7B7",
+        "$description": "Primitive green 300. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--green-300"
+          }
+        }
+      },
+      "green-400": {
+        "$type": "color",
+        "$value": "#52F990",
+        "$description": "Primitive green 400. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--green-400"
+          }
+        }
+      },
+      "green-600": {
+        "$type": "color",
+        "$value": "#0A8A47",
+        "$description": "Primitive green 600. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--green-600"
+          }
+        }
+      },
+      "green-700": {
+        "$type": "color",
+        "$value": "#006D35",
+        "$description": "Primitive green 700. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--green-700"
+          }
+        }
+      },
+      "green-800": {
+        "$type": "color",
+        "$value": "#00512A",
+        "$description": "Primitive green 800. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--green-800"
+          }
+        }
+      },
+      "green-900": {
+        "$type": "color",
+        "$value": "#004D27",
+        "$description": "Primitive green 900. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--green-900"
+          }
+        }
+      }
+    },
+    "mint": {
+      "$description": "Primitive mint ramp",
+      "mint-100": {
+        "$type": "color",
+        "$value": "#EAF5EE",
+        "$description": "Primitive mint 100. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--mint-100"
+          }
+        }
+      },
+      "mint-200": {
+        "$type": "color",
+        "$value": "#DDEFE4",
+        "$description": "Primitive mint 200. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--mint-200"
+          }
+        }
+      }
+    },
+    "neutral": {
+      "$description": "Primitive neutral ramp",
+      "neutral-0": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Primitive neutral 0. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-0"
+          }
+        }
+      },
+      "neutral-25": {
+        "$type": "color",
+        "$value": "#FAFCFB",
+        "$description": "Primitive neutral 25. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-25"
+          }
+        }
+      },
+      "neutral-50": {
+        "$type": "color",
+        "$value": "#F7FBF9",
+        "$description": "Primitive neutral 50. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-50"
+          }
+        }
+      },
+      "neutral-75": {
+        "$type": "color",
+        "$value": "#F3F8F5",
+        "$description": "Primitive neutral 75. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-75"
+          }
+        }
+      },
+      "neutral-100": {
+        "$type": "color",
+        "$value": "#F2F5F4",
+        "$description": "Primitive neutral 100. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-100"
+          }
+        }
+      },
+      "neutral-150": {
+        "$type": "color",
+        "$value": "#EDF2EF",
+        "$description": "Primitive neutral 150. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-150"
+          }
+        }
+      },
+      "neutral-200": {
+        "$type": "color",
+        "$value": "#E2EAE6",
+        "$description": "Primitive neutral 200. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-200"
+          }
+        }
+      },
+      "neutral-250": {
+        "$type": "color",
+        "$value": "#DCE6E1",
+        "$description": "Primitive neutral 250. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-250"
+          }
+        }
+      },
+      "neutral-300": {
+        "$type": "color",
+        "$value": "#C9D9D1",
+        "$description": "Primitive neutral 300. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-300"
+          }
+        }
+      },
+      "neutral-350": {
+        "$type": "color",
+        "$value": "#C9D3CE",
+        "$description": "Primitive neutral 350. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-350"
+          }
+        }
+      },
+      "neutral-400": {
+        "$type": "color",
+        "$value": "#A3AFA9",
+        "$description": "Primitive neutral 400. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-400"
+          }
+        }
+      },
+      "neutral-450": {
+        "$type": "color",
+        "$value": "#879590",
+        "$description": "Primitive neutral 450. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-450"
+          }
+        }
+      },
+      "neutral-500": {
+        "$type": "color",
+        "$value": "#7A8684",
+        "$description": "Primitive neutral 500. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-500"
+          }
+        }
+      },
+      "neutral-550": {
+        "$type": "color",
+        "$value": "#5F6B67",
+        "$description": "Primitive neutral 550. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-550"
+          }
+        }
+      },
+      "neutral-700": {
+        "$type": "color",
+        "$value": "#44544A",
+        "$description": "Primitive neutral 700. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-700"
+          }
+        }
+      },
+      "neutral-900": {
+        "$type": "color",
+        "$value": "#0E1512",
+        "$description": "Primitive neutral 900. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--neutral-900"
+          }
+        }
+      }
+    },
+    "charcoal": {
+      "$description": "Primitive charcoal ramp",
+      "charcoal-700": {
+        "$type": "color",
+        "$value": "#26252F",
+        "$description": "Primitive charcoal 700. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--charcoal-700"
+          }
+        }
+      },
+      "charcoal-800": {
+        "$type": "color",
+        "$value": "#17161D",
+        "$description": "Primitive charcoal 800. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--charcoal-800"
+          }
+        }
+      }
+    },
+    "coral": {
+      "$description": "Primitive coral ramp",
+      "coral-50": {
+        "$type": "color",
+        "$value": "#FFF5F2",
+        "$description": "Primitive coral 50. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--coral-50"
+          }
+        }
+      },
+      "coral-100": {
+        "$type": "color",
+        "$value": "#FFEBE5",
+        "$description": "Primitive coral 100. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--coral-100"
+          }
+        }
+      },
+      "coral-200": {
+        "$type": "color",
+        "$value": "#FFBDA8",
+        "$description": "Primitive coral 200. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--coral-200"
+          }
+        }
+      },
+      "coral-500": {
+        "$type": "color",
+        "$value": "#FA6140",
+        "$description": "Primitive coral 500. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--coral-500"
+          }
+        }
+      },
+      "coral-700": {
+        "$type": "color",
+        "$value": "#C2401F",
+        "$description": "Primitive coral 700. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--coral-700"
+          }
+        }
+      },
+      "coral-800": {
+        "$type": "color",
+        "$value": "#8F2E14",
+        "$description": "Primitive coral 800. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--coral-800"
+          }
+        }
+      }
+    },
+    "teal": {
+      "$description": "Primitive teal ramp",
+      "teal-100": {
+        "$type": "color",
+        "$value": "#DDF5F3",
+        "$description": "Primitive teal 100. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--teal-100"
+          }
+        }
+      },
+      "teal-200": {
+        "$type": "color",
+        "$value": "#AFEFEB",
+        "$description": "Primitive teal 200. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--teal-200"
+          }
+        }
+      },
+      "teal-400": {
+        "$type": "color",
+        "$value": "#19C2C2",
+        "$description": "Primitive teal 400. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--teal-400"
+          }
+        }
+      },
+      "teal-500": {
+        "$type": "color",
+        "$value": "#00ABAB",
+        "$description": "Primitive teal 500. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--teal-500"
+          }
+        }
+      },
+      "teal-600": {
+        "$type": "color",
+        "$value": "#008E8E",
+        "$description": "Primitive teal 600. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--teal-600"
+          }
+        }
+      },
+      "teal-700": {
+        "$type": "color",
+        "$value": "#007A7A",
+        "$description": "Primitive teal 700. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--teal-700"
+          }
+        }
+      },
+      "teal-800": {
+        "$type": "color",
+        "$value": "#005E5E",
+        "$description": "Primitive teal 800. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--teal-800"
+          }
+        }
+      }
+    },
+    "sky": {
+      "$description": "Primitive sky ramp",
+      "sky-50": {
+        "$type": "color",
+        "$value": "#E1F5FB",
+        "$description": "Primitive sky 50. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--sky-50"
+          }
+        }
+      },
+      "sky-300": {
+        "$type": "color",
+        "$value": "#4FD3EE",
+        "$description": "Primitive sky 300. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--sky-300"
+          }
+        }
+      },
+      "sky-500": {
+        "$type": "color",
+        "$value": "#00AFD6",
+        "$description": "Primitive sky 500. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--sky-500"
+          }
+        }
+      },
+      "sky-600": {
+        "$type": "color",
+        "$value": "#0092B8",
+        "$description": "Primitive sky 600. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--sky-600"
+          }
+        }
+      },
+      "sky-700": {
+        "$type": "color",
+        "$value": "#0089A8",
+        "$description": "Primitive sky 700. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--sky-700"
+          }
+        }
+      },
+      "sky-800": {
+        "$type": "color",
+        "$value": "#006E85",
+        "$description": "Primitive sky 800. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--sky-800"
+          }
+        }
+      }
+    },
+    "amber": {
+      "$description": "Primitive amber ramp",
+      "amber-50": {
+        "$type": "color",
+        "$value": "#FFF8E6",
+        "$description": "Primitive amber 50. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--amber-50"
+          }
+        }
+      },
+      "amber-100": {
+        "$type": "color",
+        "$value": "#FFF4D9",
+        "$description": "Primitive amber 100. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--amber-100"
+          }
+        }
+      },
+      "amber-150": {
+        "$type": "color",
+        "$value": "#FFF1CF",
+        "$description": "Primitive amber 150. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--amber-150"
+          }
+        }
+      },
+      "amber-400": {
+        "$type": "color",
+        "$value": "#FFC85C",
+        "$description": "Primitive amber 400. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--amber-400"
+          }
+        }
+      },
+      "amber-600": {
+        "$type": "color",
+        "$value": "#C98A12",
+        "$description": "Primitive amber 600. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--amber-600"
+          }
+        }
+      },
+      "amber-700": {
+        "$type": "color",
+        "$value": "#A87000",
+        "$description": "Primitive amber 700. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--amber-700"
+          }
+        }
+      },
+      "amber-800": {
+        "$type": "color",
+        "$value": "#8A5A00",
+        "$description": "Primitive amber 800. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--amber-800"
+          }
+        }
+      },
+      "amber-900": {
+        "$type": "color",
+        "$value": "#3A2600",
+        "$description": "Primitive amber 900. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--amber-900"
+          }
+        }
+      }
+    },
+    "violet": {
+      "$description": "Primitive violet ramp",
+      "violet-100": {
+        "$type": "color",
+        "$value": "#EEE9FF",
+        "$description": "Primitive violet 100. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--violet-100"
+          }
+        }
+      },
+      "violet-150": {
+        "$type": "color",
+        "$value": "#E6E2FA",
+        "$description": "Primitive violet 150. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--violet-150"
+          }
+        }
+      },
+      "violet-600": {
+        "$type": "color",
+        "$value": "#6B4FD8",
+        "$description": "Primitive violet 600. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--violet-600"
+          }
+        }
+      },
+      "violet-800": {
+        "$type": "color",
+        "$value": "#4B33A8",
+        "$description": "Primitive violet 800. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--violet-800"
+          }
+        }
+      }
+    },
+    "navy": {
+      "$description": "Primitive navy ramp",
+      "navy-500": {
+        "$type": "color",
+        "$value": "#1F415B",
+        "$description": "Primitive navy 500. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--navy-500"
+          }
+        }
+      },
+      "navy-600": {
+        "$type": "color",
+        "$value": "#1D3349",
+        "$description": "Primitive navy 600. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--navy-600"
+          }
+        }
+      },
+      "navy-100": {
+        "$type": "color",
+        "$value": "#E3ECF3",
+        "$description": "Primitive navy 100. Build semantic tokens from it; not for components.",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--navy-100"
+          }
+        }
+      }
+    }
+  },
+  "light": {
+    "surface": {
+      "color-bg-app": {
+        "$type": "color",
+        "$value": "#DDEFE4",
+        "$description": "Page background (the board)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-bg-app",
+            "ref": "--mint-200"
+          }
+        }
+      },
+      "color-bg-canvas": {
+        "$type": "color",
+        "$value": "#EAF5EE",
+        "$description": "Main canvas panel",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-bg-canvas",
+            "ref": "--mint-100"
+          }
+        }
+      },
+      "color-surface": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Cards, header, panels",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface",
+            "ref": "--neutral-0"
+          }
+        }
+      },
+      "color-surface-raised": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Menus, dialogs, popovers",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface-raised",
+            "ref": "--neutral-0"
+          }
+        }
+      },
+      "color-surface-sunken": {
+        "$type": "color",
+        "$value": "#F3F8F5",
+        "$description": "Rows and groups inside a card",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface-sunken",
+            "ref": "--neutral-75"
+          }
+        }
+      },
+      "color-surface-muted": {
+        "$type": "color",
+        "$value": "#F2F5F4",
+        "$description": "Filled controls, segmented track",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface-muted",
+            "ref": "--neutral-100"
+          }
+        }
+      },
+      "color-surface-hover": {
+        "$type": "color",
+        "$value": "#F1F7F3",
+        "$description": "Row and item hover",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface-hover"
+          }
+        }
+      },
+      "color-surface-selected": {
+        "$type": "color",
+        "$value": "#F2FAF5",
+        "$description": "Selected card or option",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface-selected",
+            "ref": "--green-50"
+          }
+        }
+      },
+      "color-surface-inverse": {
+        "$type": "color",
+        "$value": "#0E1512",
+        "$description": "Toasts, tooltips",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface-inverse",
+            "ref": "--neutral-900"
+          }
+        }
+      },
+      "color-surface-strong": {
+        "$type": "color",
+        "$value": "#26252F",
+        "$description": "Charcoal feature card",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface-strong",
+            "ref": "--charcoal-700"
+          }
+        }
+      },
+      "color-overlay": {
+        "$type": "color",
+        "$value": "#101A1461",
+        "$description": "Scrim behind dialogs",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-overlay"
+          }
+        }
+      },
+      "color-glass": {
+        "$type": "color",
+        "$value": "#FFFFFF8C",
+        "$description": "Frosted dock fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-glass"
+          }
+        }
+      },
+      "color-glass-border": {
+        "$type": "color",
+        "$value": "#FFFFFFCC",
+        "$description": "Frosted dock edge",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-glass-border"
+          }
+        }
+      }
+    },
+    "text": {
+      "color-text": {
+        "$type": "color",
+        "$value": "#0E1512",
+        "$description": "Primary text",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text",
+            "ref": "--neutral-900"
+          }
+        }
+      },
+      "color-text-secondary": {
+        "$type": "color",
+        "$value": "#44544A",
+        "$description": "Secondary text, labels",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-secondary",
+            "ref": "--neutral-700"
+          }
+        }
+      },
+      "color-text-muted": {
+        "$type": "color",
+        "$value": "#5F6B67",
+        "$description": "Meta, captions (AA)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-muted",
+            "ref": "--neutral-550"
+          }
+        }
+      },
+      "color-text-placeholder": {
+        "$type": "color",
+        "$value": "#5F6B67",
+        "$description": "Input placeholders",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-placeholder",
+            "ref": "--neutral-550"
+          }
+        }
+      },
+      "color-text-disabled": {
+        "$type": "color",
+        "$value": "#A3AFA9",
+        "$description": "Disabled text (exempt from AA)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-disabled",
+            "ref": "--neutral-400"
+          }
+        }
+      },
+      "color-text-inverse": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Text on inverse surfaces",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-inverse",
+            "ref": "--neutral-0"
+          }
+        }
+      },
+      "color-text-on-accent": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Text on the accent fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-on-accent",
+            "ref": "--neutral-0"
+          }
+        }
+      },
+      "color-text-on-strong": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Text on charcoal and deep green fills",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-on-strong",
+            "ref": "--neutral-0"
+          }
+        }
+      },
+      "color-text-link": {
+        "$type": "color",
+        "$value": "#006D35",
+        "$description": "Links",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-link",
+            "ref": "--green-700"
+          }
+        }
+      }
+    },
+    "border": {
+      "color-border": {
+        "$type": "color",
+        "$value": "#E2EAE6",
+        "$description": "Hairlines, card outlines",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-border",
+            "ref": "--neutral-200"
+          }
+        }
+      },
+      "color-border-subtle": {
+        "$type": "color",
+        "$value": "#EDF2EF",
+        "$description": "Dividers inside cards",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-border-subtle",
+            "ref": "--neutral-150"
+          }
+        }
+      },
+      "color-border-strong": {
+        "$type": "color",
+        "$value": "#C9D9D1",
+        "$description": "Outline buttons, choice cards",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-border-strong",
+            "ref": "--neutral-300"
+          }
+        }
+      },
+      "color-border-input": {
+        "$type": "color",
+        "$value": "#879590",
+        "$description": "Field borders (3:1)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-border-input",
+            "ref": "--neutral-450"
+          }
+        }
+      }
+    },
+    "accent": {
+      "color-accent": {
+        "$type": "color",
+        "$value": "#006D35",
+        "$description": "Primary action, selected",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-accent",
+            "ref": "--green-700"
+          }
+        }
+      },
+      "color-accent-hover": {
+        "$type": "color",
+        "$value": "#00512A",
+        "$description": "Primary hover",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-accent-hover",
+            "ref": "--green-800"
+          }
+        }
+      },
+      "color-accent-pressed": {
+        "$type": "color",
+        "$value": "#004D27",
+        "$description": "Primary pressed",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-accent-pressed",
+            "ref": "--green-900"
+          }
+        }
+      },
+      "color-accent-soft": {
+        "$type": "color",
+        "$value": "#D9FBE6",
+        "$description": "Secondary button, active nav",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-accent-soft",
+            "ref": "--green-150"
+          }
+        }
+      },
+      "color-accent-soft-hover": {
+        "$type": "color",
+        "$value": "#CFF9DD",
+        "$description": "Secondary hover",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-accent-soft-hover",
+            "ref": "--green-200"
+          }
+        }
+      },
+      "color-accent-text": {
+        "$type": "color",
+        "$value": "#006D35",
+        "$description": "Accent-coloured text",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-accent-text",
+            "ref": "--green-700"
+          }
+        }
+      },
+      "color-accent-bright": {
+        "$type": "color",
+        "$value": "#52F990",
+        "$description": "Lime: bars, tags, highlights; never text on white",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-accent-bright",
+            "ref": "--green-400"
+          }
+        }
+      }
+    },
+    "status": {
+      "color-success-bg": {
+        "$type": "color",
+        "$value": "#D9FBE6",
+        "$description": "Success fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-success-bg",
+            "ref": "--green-150"
+          }
+        }
+      },
+      "color-success-text": {
+        "$type": "color",
+        "$value": "#006D35",
+        "$description": "Success text",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-success-text",
+            "ref": "--green-700"
+          }
+        }
+      },
+      "color-success-solid": {
+        "$type": "color",
+        "$value": "#006D35",
+        "$description": "Success solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-success-solid",
+            "ref": "--green-700"
+          }
+        }
+      },
+      "color-success-on-solid": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Success text on the solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-success-on-solid"
+          }
+        }
+      },
+      "color-success-border": {
+        "$type": "color",
+        "$value": "#A9E8C0",
+        "$description": "Success border",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-success-border"
+          }
+        }
+      },
+      "color-warning-bg": {
+        "$type": "color",
+        "$value": "#FFF4D9",
+        "$description": "Warning fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-warning-bg",
+            "ref": "--amber-100"
+          }
+        }
+      },
+      "color-warning-text": {
+        "$type": "color",
+        "$value": "#8A5A00",
+        "$description": "Warning text",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-warning-text",
+            "ref": "--amber-800"
+          }
+        }
+      },
+      "color-warning-solid": {
+        "$type": "color",
+        "$value": "#FFC85C",
+        "$description": "Warning solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-warning-solid",
+            "ref": "--amber-400"
+          }
+        }
+      },
+      "color-warning-on-solid": {
+        "$type": "color",
+        "$value": "#3A2600",
+        "$description": "Warning text on the solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-warning-on-solid",
+            "ref": "--amber-900"
+          }
+        }
+      },
+      "color-warning-border": {
+        "$type": "color",
+        "$value": "#F2D58F",
+        "$description": "Warning border",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-warning-border"
+          }
+        }
+      },
+      "color-danger-bg": {
+        "$type": "color",
+        "$value": "#FFEBE5",
+        "$description": "Danger fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-danger-bg",
+            "ref": "--coral-100"
+          }
+        }
+      },
+      "color-danger-text": {
+        "$type": "color",
+        "$value": "#C2401F",
+        "$description": "Danger text",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-danger-text",
+            "ref": "--coral-700"
+          }
+        }
+      },
+      "color-danger-solid": {
+        "$type": "color",
+        "$value": "#C2401F",
+        "$description": "Danger solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-danger-solid",
+            "ref": "--coral-700"
+          }
+        }
+      },
+      "color-danger-on-solid": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Danger text on the solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-danger-on-solid"
+          }
+        }
+      },
+      "color-danger-border": {
+        "$type": "color",
+        "$value": "#FFBDA8",
+        "$description": "Danger border",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-danger-border",
+            "ref": "--coral-200"
+          }
+        }
+      },
+      "color-danger-hover": {
+        "$type": "color",
+        "$value": "#8F2E14",
+        "$description": "Danger solid hover",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-danger-hover",
+            "ref": "--coral-800"
+          }
+        }
+      },
+      "color-info-bg": {
+        "$type": "color",
+        "$value": "#E1F5FB",
+        "$description": "Info fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-info-bg",
+            "ref": "--sky-50"
+          }
+        }
+      },
+      "color-info-text": {
+        "$type": "color",
+        "$value": "#006E85",
+        "$description": "Info text",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-info-text",
+            "ref": "--sky-800"
+          }
+        }
+      },
+      "color-info-solid": {
+        "$type": "color",
+        "$value": "#006E85",
+        "$description": "Info solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-info-solid",
+            "ref": "--sky-800"
+          }
+        }
+      },
+      "color-info-on-solid": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Info text on the solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-info-on-solid"
+          }
+        }
+      },
+      "color-info-border": {
+        "$type": "color",
+        "$value": "#A8E2F0",
+        "$description": "Info border",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-info-border"
+          }
+        }
+      },
+      "color-neutral-bg": {
+        "$type": "color",
+        "$value": "#F2F5F4",
+        "$description": "Neutral fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-neutral-bg",
+            "ref": "--neutral-100"
+          }
+        }
+      },
+      "color-neutral-text": {
+        "$type": "color",
+        "$value": "#44544A",
+        "$description": "Neutral text",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-neutral-text",
+            "ref": "--neutral-700"
+          }
+        }
+      },
+      "color-neutral-solid": {
+        "$type": "color",
+        "$value": "#7A8684",
+        "$description": "Neutral solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-neutral-solid",
+            "ref": "--neutral-500"
+          }
+        }
+      }
+    },
+    "signal": {
+      "color-signal-danger": {
+        "$type": "color",
+        "$value": "#FA6140",
+        "$description": "Danger signal: dots, bars, icons (non-text, 3:1)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-signal-danger",
+            "ref": "--coral-500"
+          }
+        }
+      },
+      "color-signal-warning": {
+        "$type": "color",
+        "$value": "#A87000",
+        "$description": "Warning signal: dots, bars, icons (non-text, 3:1)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-signal-warning",
+            "ref": "--amber-700"
+          }
+        }
+      },
+      "color-signal-success": {
+        "$type": "color",
+        "$value": "#0A8A47",
+        "$description": "Success signal: dots, bars, icons (non-text, 3:1)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-signal-success",
+            "ref": "--green-600"
+          }
+        }
+      },
+      "color-signal-info": {
+        "$type": "color",
+        "$value": "#0089A8",
+        "$description": "Info signal: dots, bars, icons (non-text, 3:1)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-signal-info",
+            "ref": "--sky-700"
+          }
+        }
+      }
+    },
+    "state": {
+      "color-focus": {
+        "$type": "color",
+        "$value": "#0089A8",
+        "$description": "Focus ring",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-focus",
+            "ref": "--sky-700"
+          }
+        }
+      },
+      "color-focus-glow": {
+        "$type": "color",
+        "$value": "#006D351F",
+        "$description": "Focus glow around fields",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-focus-glow"
+          }
+        }
+      },
+      "color-disabled-bg": {
+        "$type": "color",
+        "$value": "#C9D3CE",
+        "$description": "Disabled control fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-disabled-bg",
+            "ref": "--neutral-350"
+          }
+        }
+      }
+    },
+    "hue": {
+      "hue-green": {
+        "$type": "color",
+        "$value": "#006D35",
+        "$description": "Accent hue green, base: icon colour, chart series",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-green",
+            "ref": "--green-700"
+          }
+        }
+      },
+      "hue-green-soft": {
+        "$type": "color",
+        "$value": "#D9FBE6",
+        "$description": "Accent hue green, soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-green-soft",
+            "ref": "--green-150"
+          }
+        }
+      },
+      "hue-green-ink": {
+        "$type": "color",
+        "$value": "#006D35",
+        "$description": "Accent hue green, text on the soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-green-ink",
+            "ref": "--green-700"
+          }
+        }
+      },
+      "hue-teal": {
+        "$type": "color",
+        "$value": "#008E8E",
+        "$description": "Accent hue teal, base: icon colour, chart series",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-teal",
+            "ref": "--teal-600"
+          }
+        }
+      },
+      "hue-teal-soft": {
+        "$type": "color",
+        "$value": "#DDF5F3",
+        "$description": "Accent hue teal, soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-teal-soft",
+            "ref": "--teal-100"
+          }
+        }
+      },
+      "hue-teal-ink": {
+        "$type": "color",
+        "$value": "#005E5E",
+        "$description": "Accent hue teal, text on the soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-teal-ink",
+            "ref": "--teal-800"
+          }
+        }
+      },
+      "hue-sky": {
+        "$type": "color",
+        "$value": "#0089A8",
+        "$description": "Accent hue sky, base: icon colour, chart series",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-sky",
+            "ref": "--sky-700"
+          }
+        }
+      },
+      "hue-sky-soft": {
+        "$type": "color",
+        "$value": "#E1F5FB",
+        "$description": "Accent hue sky, soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-sky-soft",
+            "ref": "--sky-50"
+          }
+        }
+      },
+      "hue-sky-ink": {
+        "$type": "color",
+        "$value": "#006E85",
+        "$description": "Accent hue sky, text on the soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-sky-ink",
+            "ref": "--sky-800"
+          }
+        }
+      },
+      "hue-coral": {
+        "$type": "color",
+        "$value": "#FA6140",
+        "$description": "Accent hue coral, base: icon colour, chart series",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-coral",
+            "ref": "--coral-500"
+          }
+        }
+      },
+      "hue-coral-soft": {
+        "$type": "color",
+        "$value": "#FFEBE5",
+        "$description": "Accent hue coral, soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-coral-soft",
+            "ref": "--coral-100"
+          }
+        }
+      },
+      "hue-coral-ink": {
+        "$type": "color",
+        "$value": "#C2401F",
+        "$description": "Accent hue coral, text on the soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-coral-ink",
+            "ref": "--coral-700"
+          }
+        }
+      },
+      "hue-amber": {
+        "$type": "color",
+        "$value": "#A87000",
+        "$description": "Accent hue amber, base: icon colour, chart series",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-amber",
+            "ref": "--amber-700"
+          }
+        }
+      },
+      "hue-amber-soft": {
+        "$type": "color",
+        "$value": "#FFF4D9",
+        "$description": "Accent hue amber, soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-amber-soft",
+            "ref": "--amber-100"
+          }
+        }
+      },
+      "hue-amber-ink": {
+        "$type": "color",
+        "$value": "#8A5A00",
+        "$description": "Accent hue amber, text on the soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-amber-ink",
+            "ref": "--amber-800"
+          }
+        }
+      },
+      "hue-violet": {
+        "$type": "color",
+        "$value": "#6B4FD8",
+        "$description": "Accent hue violet, base: icon colour, chart series",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-violet",
+            "ref": "--violet-600"
+          }
+        }
+      },
+      "hue-violet-soft": {
+        "$type": "color",
+        "$value": "#EEE9FF",
+        "$description": "Accent hue violet, soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-violet-soft",
+            "ref": "--violet-100"
+          }
+        }
+      },
+      "hue-violet-ink": {
+        "$type": "color",
+        "$value": "#4B33A8",
+        "$description": "Accent hue violet, text on the soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-violet-ink",
+            "ref": "--violet-800"
+          }
+        }
+      },
+      "hue-navy": {
+        "$type": "color",
+        "$value": "#1F415B",
+        "$description": "Accent hue navy, base: icon colour, chart series",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-navy",
+            "ref": "--navy-500"
+          }
+        }
+      },
+      "hue-navy-soft": {
+        "$type": "color",
+        "$value": "#E3ECF3",
+        "$description": "Accent hue navy, soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-navy-soft",
+            "ref": "--navy-100"
+          }
+        }
+      },
+      "hue-navy-ink": {
+        "$type": "color",
+        "$value": "#1F415B",
+        "$description": "Accent hue navy, text on the soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-navy-ink",
+            "ref": "--navy-500"
+          }
+        }
+      }
+    }
+  },
+  "dark": {
+    "surface": {
+      "color-bg-app": {
+        "$type": "color",
+        "$value": "#0A110E",
+        "$description": "Page background (the board)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-bg-app"
+          }
+        }
+      },
+      "color-bg-canvas": {
+        "$type": "color",
+        "$value": "#0F1814",
+        "$description": "Main canvas panel",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-bg-canvas"
+          }
+        }
+      },
+      "color-surface": {
+        "$type": "color",
+        "$value": "#141F1A",
+        "$description": "Cards, header, panels",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface"
+          }
+        }
+      },
+      "color-surface-raised": {
+        "$type": "color",
+        "$value": "#1A2620",
+        "$description": "Menus, dialogs, popovers",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface-raised"
+          }
+        }
+      },
+      "color-surface-sunken": {
+        "$type": "color",
+        "$value": "#0F1814",
+        "$description": "Rows and groups inside a card",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface-sunken"
+          }
+        }
+      },
+      "color-surface-muted": {
+        "$type": "color",
+        "$value": "#1E2B25",
+        "$description": "Filled controls, segmented track",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface-muted"
+          }
+        }
+      },
+      "color-surface-hover": {
+        "$type": "color",
+        "$value": "#22302A",
+        "$description": "Row and item hover",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface-hover"
+          }
+        }
+      },
+      "color-surface-selected": {
+        "$type": "color",
+        "$value": "#123321",
+        "$description": "Selected card or option",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface-selected"
+          }
+        }
+      },
+      "color-surface-inverse": {
+        "$type": "color",
+        "$value": "#EAF5EE",
+        "$description": "Toasts, tooltips",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface-inverse"
+          }
+        }
+      },
+      "color-surface-strong": {
+        "$type": "color",
+        "$value": "#22212A",
+        "$description": "Charcoal feature card",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-surface-strong"
+          }
+        }
+      },
+      "color-overlay": {
+        "$type": "color",
+        "$value": "#00000099",
+        "$description": "Scrim behind dialogs",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-overlay"
+          }
+        }
+      },
+      "color-glass": {
+        "$type": "color",
+        "$value": "#141F1AB8",
+        "$description": "Frosted dock fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-glass"
+          }
+        }
+      },
+      "color-glass-border": {
+        "$type": "color",
+        "$value": "#FFFFFF14",
+        "$description": "Frosted dock edge",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-glass-border"
+          }
+        }
+      }
+    },
+    "text": {
+      "color-text": {
+        "$type": "color",
+        "$value": "#E9F1ED",
+        "$description": "Primary text",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text"
+          }
+        }
+      },
+      "color-text-secondary": {
+        "$type": "color",
+        "$value": "#B6C4BD",
+        "$description": "Secondary text, labels",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-secondary"
+          }
+        }
+      },
+      "color-text-muted": {
+        "$type": "color",
+        "$value": "#94A39C",
+        "$description": "Meta, captions (AA)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-muted"
+          }
+        }
+      },
+      "color-text-placeholder": {
+        "$type": "color",
+        "$value": "#7F8E87",
+        "$description": "Input placeholders",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-placeholder"
+          }
+        }
+      },
+      "color-text-disabled": {
+        "$type": "color",
+        "$value": "#5E6B65",
+        "$description": "Disabled text (exempt from AA)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-disabled"
+          }
+        }
+      },
+      "color-text-inverse": {
+        "$type": "color",
+        "$value": "#0E1512",
+        "$description": "Text on inverse surfaces",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-inverse"
+          }
+        }
+      },
+      "color-text-on-accent": {
+        "$type": "color",
+        "$value": "#04361B",
+        "$description": "Text on the accent fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-on-accent"
+          }
+        }
+      },
+      "color-text-on-strong": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Text on charcoal and deep green fills",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-on-strong"
+          }
+        }
+      },
+      "color-text-link": {
+        "$type": "color",
+        "$value": "#6FF7A3",
+        "$description": "Links",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-text-link"
+          }
+        }
+      }
+    },
+    "border": {
+      "color-border": {
+        "$type": "color",
+        "$value": "#2A3832",
+        "$description": "Hairlines, card outlines",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-border"
+          }
+        }
+      },
+      "color-border-subtle": {
+        "$type": "color",
+        "$value": "#1F2B26",
+        "$description": "Dividers inside cards",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-border-subtle"
+          }
+        }
+      },
+      "color-border-strong": {
+        "$type": "color",
+        "$value": "#3B4B44",
+        "$description": "Outline buttons, choice cards",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-border-strong"
+          }
+        }
+      },
+      "color-border-input": {
+        "$type": "color",
+        "$value": "#64756D",
+        "$description": "Field borders (3:1)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-border-input"
+          }
+        }
+      }
+    },
+    "accent": {
+      "color-accent": {
+        "$type": "color",
+        "$value": "#52F990",
+        "$description": "Primary action, selected",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-accent"
+          }
+        }
+      },
+      "color-accent-hover": {
+        "$type": "color",
+        "$value": "#8FF7B7",
+        "$description": "Primary hover",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-accent-hover"
+          }
+        }
+      },
+      "color-accent-pressed": {
+        "$type": "color",
+        "$value": "#3FD978",
+        "$description": "Primary pressed",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-accent-pressed"
+          }
+        }
+      },
+      "color-accent-soft": {
+        "$type": "color",
+        "$value": "#123A24",
+        "$description": "Secondary button, active nav",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-accent-soft"
+          }
+        }
+      },
+      "color-accent-soft-hover": {
+        "$type": "color",
+        "$value": "#174A2E",
+        "$description": "Secondary hover",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-accent-soft-hover"
+          }
+        }
+      },
+      "color-accent-text": {
+        "$type": "color",
+        "$value": "#6FF7A3",
+        "$description": "Accent-coloured text",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-accent-text"
+          }
+        }
+      },
+      "color-accent-bright": {
+        "$type": "color",
+        "$value": "#52F990",
+        "$description": "Lime: bars, tags, highlights; never text on white",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-accent-bright"
+          }
+        }
+      }
+    },
+    "status": {
+      "color-success-bg": {
+        "$type": "color",
+        "$value": "#123A24",
+        "$description": "Success fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-success-bg"
+          }
+        }
+      },
+      "color-success-text": {
+        "$type": "color",
+        "$value": "#6FF7A3",
+        "$description": "Success text",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-success-text"
+          }
+        }
+      },
+      "color-success-solid": {
+        "$type": "color",
+        "$value": "#52F990",
+        "$description": "Success solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-success-solid"
+          }
+        }
+      },
+      "color-success-on-solid": {
+        "$type": "color",
+        "$value": "#04361B",
+        "$description": "Success text on the solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-success-on-solid"
+          }
+        }
+      },
+      "color-success-border": {
+        "$type": "color",
+        "$value": "#1E5A37",
+        "$description": "Success border",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-success-border"
+          }
+        }
+      },
+      "color-warning-bg": {
+        "$type": "color",
+        "$value": "#33270B",
+        "$description": "Warning fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-warning-bg"
+          }
+        }
+      },
+      "color-warning-text": {
+        "$type": "color",
+        "$value": "#FFC85C",
+        "$description": "Warning text",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-warning-text"
+          }
+        }
+      },
+      "color-warning-solid": {
+        "$type": "color",
+        "$value": "#FFC85C",
+        "$description": "Warning solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-warning-solid"
+          }
+        }
+      },
+      "color-warning-on-solid": {
+        "$type": "color",
+        "$value": "#3A2600",
+        "$description": "Warning text on the solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-warning-on-solid"
+          }
+        }
+      },
+      "color-warning-border": {
+        "$type": "color",
+        "$value": "#5A4416",
+        "$description": "Warning border",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-warning-border"
+          }
+        }
+      },
+      "color-danger-bg": {
+        "$type": "color",
+        "$value": "#3A1A12",
+        "$description": "Danger fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-danger-bg"
+          }
+        }
+      },
+      "color-danger-text": {
+        "$type": "color",
+        "$value": "#FF9A82",
+        "$description": "Danger text",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-danger-text"
+          }
+        }
+      },
+      "color-danger-solid": {
+        "$type": "color",
+        "$value": "#FF7A5C",
+        "$description": "Danger solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-danger-solid"
+          }
+        }
+      },
+      "color-danger-on-solid": {
+        "$type": "color",
+        "$value": "#2A0D05",
+        "$description": "Danger text on the solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-danger-on-solid"
+          }
+        }
+      },
+      "color-danger-border": {
+        "$type": "color",
+        "$value": "#6A2D1E",
+        "$description": "Danger border",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-danger-border"
+          }
+        }
+      },
+      "color-danger-hover": {
+        "$type": "color",
+        "$value": "#FF9A82",
+        "$description": "Danger solid hover",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-danger-hover"
+          }
+        }
+      },
+      "color-info-bg": {
+        "$type": "color",
+        "$value": "#0B2C35",
+        "$description": "Info fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-info-bg"
+          }
+        }
+      },
+      "color-info-text": {
+        "$type": "color",
+        "$value": "#6EDCF2",
+        "$description": "Info text",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-info-text"
+          }
+        }
+      },
+      "color-info-solid": {
+        "$type": "color",
+        "$value": "#4FD3EE",
+        "$description": "Info solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-info-solid"
+          }
+        }
+      },
+      "color-info-on-solid": {
+        "$type": "color",
+        "$value": "#04252D",
+        "$description": "Info text on the solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-info-on-solid"
+          }
+        }
+      },
+      "color-info-border": {
+        "$type": "color",
+        "$value": "#164A57",
+        "$description": "Info border",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-info-border"
+          }
+        }
+      },
+      "color-neutral-bg": {
+        "$type": "color",
+        "$value": "#1E2B25",
+        "$description": "Neutral fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-neutral-bg"
+          }
+        }
+      },
+      "color-neutral-text": {
+        "$type": "color",
+        "$value": "#B6C4BD",
+        "$description": "Neutral text",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-neutral-text"
+          }
+        }
+      },
+      "color-neutral-solid": {
+        "$type": "color",
+        "$value": "#94A39C",
+        "$description": "Neutral solid fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-neutral-solid"
+          }
+        }
+      }
+    },
+    "signal": {
+      "color-signal-danger": {
+        "$type": "color",
+        "$value": "#FA6140",
+        "$description": "Danger signal: dots, bars, icons (non-text, 3:1)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-signal-danger",
+            "ref": "--coral-500"
+          }
+        }
+      },
+      "color-signal-warning": {
+        "$type": "color",
+        "$value": "#A87000",
+        "$description": "Warning signal: dots, bars, icons (non-text, 3:1)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-signal-warning",
+            "ref": "--amber-700"
+          }
+        }
+      },
+      "color-signal-success": {
+        "$type": "color",
+        "$value": "#0A8A47",
+        "$description": "Success signal: dots, bars, icons (non-text, 3:1)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-signal-success",
+            "ref": "--green-600"
+          }
+        }
+      },
+      "color-signal-info": {
+        "$type": "color",
+        "$value": "#0089A8",
+        "$description": "Info signal: dots, bars, icons (non-text, 3:1)",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-signal-info",
+            "ref": "--sky-700"
+          }
+        }
+      }
+    },
+    "state": {
+      "color-focus": {
+        "$type": "color",
+        "$value": "#4FD3EE",
+        "$description": "Focus ring",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-focus"
+          }
+        }
+      },
+      "color-focus-glow": {
+        "$type": "color",
+        "$value": "#4FD3EE40",
+        "$description": "Focus glow around fields",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-focus-glow"
+          }
+        }
+      },
+      "color-disabled-bg": {
+        "$type": "color",
+        "$value": "#26332D",
+        "$description": "Disabled control fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--color-disabled-bg"
+          }
+        }
+      }
+    },
+    "hue": {
+      "hue-green": {
+        "$type": "color",
+        "$value": "#52F990",
+        "$description": "Accent hue green, base: icon colour, chart series",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-green"
+          }
+        }
+      },
+      "hue-green-soft": {
+        "$type": "color",
+        "$value": "#123A24",
+        "$description": "Accent hue green, soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-green-soft"
+          }
+        }
+      },
+      "hue-green-ink": {
+        "$type": "color",
+        "$value": "#6FF7A3",
+        "$description": "Accent hue green, text on the soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-green-ink"
+          }
+        }
+      },
+      "hue-teal": {
+        "$type": "color",
+        "$value": "#008E8E",
+        "$description": "Accent hue teal, base: icon colour, chart series",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-teal",
+            "ref": "--teal-600"
+          }
+        }
+      },
+      "hue-teal-soft": {
+        "$type": "color",
+        "$value": "#0D3333",
+        "$description": "Accent hue teal, soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-teal-soft"
+          }
+        }
+      },
+      "hue-teal-ink": {
+        "$type": "color",
+        "$value": "#5FE0DA",
+        "$description": "Accent hue teal, text on the soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-teal-ink"
+          }
+        }
+      },
+      "hue-sky": {
+        "$type": "color",
+        "$value": "#0089A8",
+        "$description": "Accent hue sky, base: icon colour, chart series",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-sky",
+            "ref": "--sky-700"
+          }
+        }
+      },
+      "hue-sky-soft": {
+        "$type": "color",
+        "$value": "#0B2C35",
+        "$description": "Accent hue sky, soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-sky-soft"
+          }
+        }
+      },
+      "hue-sky-ink": {
+        "$type": "color",
+        "$value": "#6EDCF2",
+        "$description": "Accent hue sky, text on the soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-sky-ink"
+          }
+        }
+      },
+      "hue-coral": {
+        "$type": "color",
+        "$value": "#FA6140",
+        "$description": "Accent hue coral, base: icon colour, chart series",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-coral",
+            "ref": "--coral-500"
+          }
+        }
+      },
+      "hue-coral-soft": {
+        "$type": "color",
+        "$value": "#3A1A12",
+        "$description": "Accent hue coral, soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-coral-soft"
+          }
+        }
+      },
+      "hue-coral-ink": {
+        "$type": "color",
+        "$value": "#FF9A82",
+        "$description": "Accent hue coral, text on the soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-coral-ink"
+          }
+        }
+      },
+      "hue-amber": {
+        "$type": "color",
+        "$value": "#A87000",
+        "$description": "Accent hue amber, base: icon colour, chart series",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-amber",
+            "ref": "--amber-700"
+          }
+        }
+      },
+      "hue-amber-soft": {
+        "$type": "color",
+        "$value": "#33270B",
+        "$description": "Accent hue amber, soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-amber-soft"
+          }
+        }
+      },
+      "hue-amber-ink": {
+        "$type": "color",
+        "$value": "#FFC85C",
+        "$description": "Accent hue amber, text on the soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-amber-ink"
+          }
+        }
+      },
+      "hue-violet": {
+        "$type": "color",
+        "$value": "#9B85F0",
+        "$description": "Accent hue violet, base: icon colour, chart series",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-violet"
+          }
+        }
+      },
+      "hue-violet-soft": {
+        "$type": "color",
+        "$value": "#241D45",
+        "$description": "Accent hue violet, soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-violet-soft"
+          }
+        }
+      },
+      "hue-violet-ink": {
+        "$type": "color",
+        "$value": "#BBA9FF",
+        "$description": "Accent hue violet, text on the soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-violet-ink"
+          }
+        }
+      },
+      "hue-navy": {
+        "$type": "color",
+        "$value": "#7FA9CC",
+        "$description": "Accent hue navy, base: icon colour, chart series",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-navy"
+          }
+        }
+      },
+      "hue-navy-soft": {
+        "$type": "color",
+        "$value": "#142636",
+        "$description": "Accent hue navy, soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-navy-soft"
+          }
+        }
+      },
+      "hue-navy-ink": {
+        "$type": "color",
+        "$value": "#9CC3E3",
+        "$description": "Accent hue navy, text on the soft fill",
+        "$extensions": {
+          "com.antz.css": {
+            "var": "--hue-navy-ink"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,447 @@
+/* ==========================================================================
+   Design System Foundation · tokens
+   Source of the values: antz-home-style-2.vercel.app/style-6 (inline CSS,
+   read 9 Nov 2026). Values marked "derived" are not on style-6; they were
+   added here (dark theme, status colours, AA-safe text, accent hues).
+
+   Layers
+     1. Primitives  --{hue}-{step}, --size-*, raw values. Do not use in
+                    components; use them only to build semantic tokens.
+     2. Semantic    --color-*, --space-*, --radius-*, --shadow-*, --font-*,
+                    --text-*, --motion-*. Components use only these.
+     3. Themes      light is the default; dark via prefers-color-scheme,
+                    forced with <html data-theme="light|dark">.
+   ========================================================================== */
+
+:root {
+  /* ── 1. Primitives ────────────────────────────────────────────────────── */
+
+  /* Green: the brand. lime #52F990, lime-ink #006D35, deep #00512A (style-6) */
+  --green-50: #F2FAF5;
+  --green-100: #DFF8E6;
+  --green-150: #D9FBE6;
+  --green-200: #CFF9DD;
+  --green-300: #8FF7B7;
+  --green-400: #52F990;
+  --green-600: #0A8A47;
+  --green-700: #006D35;
+  --green-800: #00512A;
+  --green-900: #004D27;
+
+  /* Board mints (page background and canvas on style-6) */
+  --mint-100: #EAF5EE;
+  --mint-200: #DDEFE4;
+
+  /* Neutrals, green-tinted (style-6 ink / ink-2 / mute / lines) */
+  --neutral-0: #FFFFFF;
+  --neutral-25: #FAFCFB;
+  --neutral-50: #F7FBF9;
+  --neutral-75: #F3F8F5;
+  --neutral-100: #F2F5F4;
+  --neutral-150: #EDF2EF;
+  --neutral-200: #E2EAE6;
+  --neutral-250: #DCE6E1;
+  --neutral-300: #C9D9D1;
+  --neutral-350: #C9D3CE;
+  --neutral-400: #A3AFA9;
+  --neutral-450: #879590;   /* derived: 3:1 input border */
+  --neutral-500: #7A8684;   /* style-6 "mute": 3.8:1, icons only */
+  --neutral-550: #5F6B67;   /* derived: AA muted text */
+  --neutral-700: #44544A;
+  --neutral-900: #0E1512;
+
+  /* Charcoal (Mortality card, Quick Actions on style-6) */
+  --charcoal-700: #26252F;
+  --charcoal-800: #17161D;
+
+  /* Coral */
+  --coral-50: #FFF5F2;
+  --coral-100: #FFEBE5;
+  --coral-200: #FFBDA8;
+  --coral-500: #FA6140;
+  --coral-700: #C2401F;     /* derived: AA text / solid with white */
+  --coral-800: #8F2E14;     /* derived */
+
+  /* Teal */
+  --teal-100: #DDF5F3;
+  --teal-200: #AFEFEB;
+  --teal-400: #19C2C2;
+  --teal-500: #00ABAB;
+  --teal-600: #008E8E;
+  --teal-700: #007A7A;      /* derived: AA with white */
+  --teal-800: #005E5E;      /* derived */
+
+  /* Sky */
+  --sky-50: #E1F5FB;
+  --sky-300: #4FD3EE;
+  --sky-500: #00AFD6;
+  --sky-600: #0092B8;
+  --sky-700: #0089A8;
+  --sky-800: #006E85;       /* derived */
+
+  /* Amber / butter */
+  --amber-50: #FFF8E6;
+  --amber-100: #FFF4D9;
+  --amber-150: #FFF1CF;
+  --amber-400: #FFC85C;
+  --amber-600: #C98A12;
+  --amber-700: #A87000;     /* derived: 3:1 on white, for icons and chart series */
+  --amber-800: #8A5A00;     /* derived: AA text */
+  --amber-900: #3A2600;
+
+  /* Violet (avatar tint on style-6) */
+  --violet-100: #EEE9FF;
+  --violet-150: #E6E2FA;
+  --violet-600: #6B4FD8;    /* derived */
+  --violet-800: #4B33A8;    /* derived */
+
+  /* Navy */
+  --navy-500: #1F415B;
+  --navy-600: #1D3349;
+  --navy-100: #E3ECF3;      /* derived */
+
+  /* Type primitives */
+  --font-family-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-family-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* ── 2. Semantic: typography ──────────────────────────────────────────── */
+  --font-body: var(--font-family-sans);
+  --font-heading: var(--font-family-sans);
+  --font-mono: var(--font-family-mono);
+
+  --weight-light: 300;     /* big numbers */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;  /* the default for labels and titles */
+  --weight-bold: 700;      /* overlines, counts, badges */
+
+  /* Size scale (px values seen on style-6, rounded to one step each) */
+  --text-2xs: 11px;    /* overline, badge */
+  --text-xs: 12px;     /* caption, meta */
+  --text-sm: 13px;     /* secondary body, small buttons */
+  --text-md: 14px;     /* body (style-6 base) */
+  --text-lg: 15px;     /* card titles, inputs */
+  --text-xl: 17px;     /* section titles */
+  --text-2xl: 19px;    /* dialog / widget titles */
+  --text-3xl: 22px;    /* stat values, brand */
+  --text-4xl: 28px;    /* page greeting */
+  --text-5xl: 38px;    /* page title */
+  --text-6xl: 46px;    /* stat hero */
+  --text-display: clamp(52px, 4.6vw, 72px);
+
+  --leading-none: 1;
+  --leading-tight: 1.15;
+  --leading-snug: 1.3;
+  --leading-normal: 1.45;
+  --leading-relaxed: 1.55;
+
+  --tracking-display: -.045em;
+  --tracking-tight: -.03em;
+  --tracking-heading: -.02em;
+  --tracking-snug: -.01em;
+  --tracking-normal: 0;
+  --tracking-overline: .08em;
+
+  /* ── Spacing: 4px base, half steps where style-6 uses them ────────────── */
+  --space-0: 0;
+  --space-0-5: 2px;
+  --space-1: 4px;
+  --space-1-5: 6px;
+  --space-2: 8px;
+  --space-2-5: 10px;
+  --space-3: 12px;
+  --space-3-5: 14px;
+  --space-4: 16px;
+  --space-4-5: 18px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-6-5: 26px;   /* panel inset */
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ── Radii ───────────────────────────────────────────────────────────── */
+  --radius-xs: 6px;      /* kbd, segment inside a pill */
+  --radius-sm: 8px;      /* chips, small tiles (style-6 --r) */
+  --radius-control: 10px;/* buttons, inputs, icon tiles */
+  --radius-md: 12px;     /* rows, icon buttons, search */
+  --radius-lg: 16px;     /* cards */
+  --radius-xl: 20px;     /* dialogs, section cards */
+  --radius-2xl: 22px;    /* app panels, header bar, hero */
+  --radius-full: 999px;  /* pills, avatars */
+
+  /* ── Sizes ───────────────────────────────────────────────────────────── */
+  --size-control-sm: 34px;
+  --size-control-md: 42px;
+  --size-control-lg: 48px;
+  --size-icon-xs: 14px;
+  --size-icon-sm: 16px;
+  --size-icon-md: 20px;
+  --size-icon-lg: 24px;
+  --icon-stroke: 1.8;
+  --border-width: 1px;
+  --border-width-strong: 2px;
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+
+  /* ── Motion (style-6 --ease and the dialog spring) ───────────────────── */
+  --ease-standard: cubic-bezier(.2, .7, .2, 1);
+  --ease-spring: cubic-bezier(.22, 1, .36, 1);
+  --ease-in-out: ease-in-out;
+  --duration-instant: 100ms;
+  --duration-fast: 150ms;   /* colour, background */
+  --duration-base: 200ms;   /* hover lift, transforms */
+  --duration-moderate: 250ms;
+  --duration-slow: 350ms;   /* expand, collapse */
+  --duration-slower: 500ms; /* sliding pill, dialog */
+  --duration-pulse: 1600ms; /* live dot */
+  --duration-enter: 420ms;  /* cards rising into view */
+  --duration-count: 900ms;  /* figures counting up */
+  --duration-shimmer: 1400ms; /* loading sweep */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);   /* enter: fast start, long settle */
+  --stagger: 60ms;          /* delay between cards entering together */
+  --motion-lift: -3px;      /* hover lift */
+  --motion-press: .98;      /* press scale */
+  --motion-rise: 14px;      /* distance a card rises as it enters */
+
+  /* ── Breakpoints (CSS variables can't go in media queries: use the
+        numbers; these tokens document them and feed scripts) ──────────── */
+  --bp-tablet: 600px;       /* mobile is below this */
+  --bp-desktop: 1024px;     /* tablet is 600 to 1023 */
+  --bp-wide: 1280px;        /* wide desktop: right panels widen */
+
+  /* ── Layers ──────────────────────────────────────────────────────────── */
+  --z-base: 0;
+  --z-sticky: 20;
+  --z-dock: 30;
+  --z-popover: 70;
+  --z-dialog: 90;
+  --z-toast: 100;
+
+  /* ── 3. Light theme (default) ────────────────────────────────────────── */
+  color-scheme: light;
+  --color-bg-app: var(--mint-200);
+  --color-bg-canvas: var(--mint-100);
+  --color-surface: var(--neutral-0);
+  --color-surface-raised: var(--neutral-0);
+  --color-surface-sunken: var(--neutral-75);
+  --color-surface-muted: var(--neutral-100);
+  --color-surface-hover: #F1F7F3;
+  --color-surface-selected: var(--green-50);
+  --color-surface-inverse: var(--neutral-900);
+  --color-surface-strong: var(--charcoal-700);
+  --color-overlay: rgba(16, 26, 20, .38);
+  --color-glass: rgba(255, 255, 255, .55);
+  --color-glass-border: rgba(255, 255, 255, .8);
+
+  --color-text: var(--neutral-900);
+  --color-text-secondary: var(--neutral-700);
+  --color-text-muted: var(--neutral-550);
+  --color-text-placeholder: var(--neutral-550);
+  --color-text-disabled: var(--neutral-400);
+  --color-text-inverse: var(--neutral-0);
+  --color-text-on-accent: var(--neutral-0);
+  --color-text-on-strong: var(--neutral-0);
+  --color-text-link: var(--green-700);
+
+  --color-border: var(--neutral-200);
+  --color-border-subtle: var(--neutral-150);
+  --color-border-strong: var(--neutral-300);
+  --color-border-input: var(--neutral-450);
+
+  --color-accent: var(--green-700);
+  --color-accent-hover: var(--green-800);
+  --color-accent-pressed: var(--green-900);
+  --color-accent-soft: var(--green-150);
+  --color-accent-soft-hover: var(--green-200);
+  --color-accent-text: var(--green-700);
+  --color-accent-bright: var(--green-400);   /* highlight fill, never text on white */
+
+  --color-success-bg: var(--green-150); --color-success-text: var(--green-700); --color-success-solid: var(--green-700); --color-success-on-solid: #fff; --color-success-border: #A9E8C0;
+  --color-warning-bg: var(--amber-100); --color-warning-text: var(--amber-800); --color-warning-solid: var(--amber-400); --color-warning-on-solid: var(--amber-900); --color-warning-border: #F2D58F;
+  --color-danger-bg: var(--coral-100);  --color-danger-text: var(--coral-700); --color-danger-solid: var(--coral-700); --color-danger-on-solid: #fff; --color-danger-border: var(--coral-200); --color-danger-hover: var(--coral-800);
+  --color-info-bg: var(--sky-50);       --color-info-text: var(--sky-800);   --color-info-solid: var(--sky-800); --color-info-on-solid: #fff; --color-info-border: #A8E2F0;
+  --color-neutral-bg: var(--neutral-100); --color-neutral-text: var(--neutral-700); --color-neutral-solid: var(--neutral-500);
+  /* Decorative signal colours (dots, bars, badges): non-text, 3:1 or more */
+  --color-signal-danger: var(--coral-500);
+  --color-signal-warning: var(--amber-700);
+  --color-signal-success: var(--green-600);
+  --color-signal-info: var(--sky-700);
+
+  --color-focus: var(--sky-700);
+  --color-focus-glow: rgba(0, 109, 53, .12);
+  --color-disabled-bg: var(--neutral-350);
+
+  /* Accent hues: categorical colours for avatars, icon tiles and charts */
+  --hue-green: var(--green-700);  --hue-green-soft: var(--green-150); --hue-green-ink: var(--green-700);
+  --hue-teal: var(--teal-600);    --hue-teal-soft: var(--teal-100);   --hue-teal-ink: var(--teal-800);
+  --hue-sky: var(--sky-700);      --hue-sky-soft: var(--sky-50);      --hue-sky-ink: var(--sky-800);
+  --hue-coral: var(--coral-500);  --hue-coral-soft: var(--coral-100); --hue-coral-ink: var(--coral-700);
+  --hue-amber: var(--amber-700);  --hue-amber-soft: var(--amber-100); --hue-amber-ink: var(--amber-800);
+  --hue-violet: var(--violet-600);--hue-violet-soft: var(--violet-100); --hue-violet-ink: var(--violet-800);
+  --hue-navy: var(--navy-500);    --hue-navy-soft: var(--navy-100);   --hue-navy-ink: var(--navy-500);
+
+  /* Elevation (style-6 --sh and friends) */
+  --shadow-none: none;
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, .08);
+  --shadow-sm: 0 1px 2px rgba(0, 60, 30, .05), 0 14px 30px -22px rgba(0, 60, 30, .45);
+  --shadow-md: 0 2px 4px rgba(20, 40, 30, .05), 0 18px 34px -18px rgba(20, 40, 30, .45);
+  --shadow-lg: 0 30px 70px -24px rgba(0, 40, 20, .5), 0 0 0 1px var(--color-border-subtle);
+  --shadow-xl: 0 40px 90px -30px rgba(0, 40, 20, .55);
+  --shadow-float: 0 18px 40px -18px rgba(0, 40, 20, .45);
+  --shadow-accent: 0 10px 22px -12px rgba(0, 109, 53, .9);
+  --shadow-hairline: inset 0 0 0 1px var(--color-border);
+
+  /* Feature-card fills (style-6 widgets). Text on them: see components.css */
+  --gradient-blue: radial-gradient(130% 90% at 100% 0%, #4FD3EE 0%, #00AFD6 45%, #0092B8 100%);
+  --gradient-teal: linear-gradient(140deg, #19C2C2 0%, #00ABAB 55%, #008E8E 100%);
+  --gradient-green: linear-gradient(135deg, #004D27 0%, #006D35 60%, #0A8A47 100%);
+  --gradient-deep: linear-gradient(140deg, #003D1F 0%, #004D27 55%, #006D35 100%); /* derived: lime and white text pass AA on every stop */
+  --gradient-mint: linear-gradient(130deg, #D2FAD8 0%, #A3F3AE 45%, #86F09A 100%);
+  --gradient-glow: radial-gradient(70% 85% at 100% 100%, #C4F5CF 0%, rgba(196, 245, 207, .45) 40%, rgba(196, 245, 207, 0) 75%);
+  --gradient-aurora: radial-gradient(42% 110% at 0% 100%, rgba(140, 222, 238, .75), rgba(140, 222, 238, 0) 72%), radial-gradient(36% 95% at 32% 108%, rgba(140, 240, 165, .85), rgba(140, 240, 165, 0) 72%), radial-gradient(30% 75% at 92% 62%, rgba(250, 190, 162, .6), rgba(250, 190, 162, 0) 75%);
+  --texture-rings: repeating-radial-gradient(circle at -20% 135%, rgba(255, 255, 255, 0) 0 15px, rgba(255, 255, 255, .055) 15px 16px);
+}
+
+/* Dark theme: follows the OS unless the page forces light */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  color-scheme: dark;
+  --color-bg-app: #0A110E;
+  --color-bg-canvas: #0F1814;
+  --color-surface: #141F1A;
+  --color-surface-raised: #1A2620;
+  --color-surface-sunken: #0F1814;
+  --color-surface-muted: #1E2B25;
+  --color-surface-hover: #22302A;
+  --color-surface-selected: #123321;
+  --color-surface-inverse: #EAF5EE;
+  --color-surface-strong: #22212A;
+  --color-overlay: rgba(0, 0, 0, .6);
+  --color-glass: rgba(20, 31, 26, .72);
+  --color-glass-border: rgba(255, 255, 255, .08);
+
+  --color-text: #E9F1ED;
+  --color-text-secondary: #B6C4BD;
+  --color-text-muted: #94A39C;
+  --color-text-placeholder: #7F8E87;
+  --color-text-disabled: #5E6B65;
+  --color-text-inverse: #0E1512;
+  --color-text-on-accent: #04361B;
+  --color-text-on-strong: #FFFFFF;
+  --color-text-link: #6FF7A3;
+
+  --color-border: #2A3832;
+  --color-border-subtle: #1F2B26;
+  --color-border-strong: #3B4B44;
+  --color-border-input: #64756D;
+
+  --color-accent: #52F990;
+  --color-accent-hover: #8FF7B7;
+  --color-accent-pressed: #3FD978;
+  --color-accent-soft: #123A24;
+  --color-accent-soft-hover: #174A2E;
+  --color-accent-text: #6FF7A3;
+  --color-accent-bright: #52F990;
+
+  --color-success-bg: #123A24; --color-success-text: #6FF7A3; --color-success-solid: #52F990; --color-success-on-solid: #04361B; --color-success-border: #1E5A37;
+  --color-warning-bg: #33270B; --color-warning-text: #FFC85C; --color-warning-solid: #FFC85C; --color-warning-on-solid: #3A2600; --color-warning-border: #5A4416;
+  --color-danger-bg: #3A1A12;  --color-danger-text: #FF9A82; --color-danger-solid: #FF7A5C; --color-danger-on-solid: #2A0D05; --color-danger-border: #6A2D1E; --color-danger-hover: #FF9A82;
+  --color-info-bg: #0B2C35;    --color-info-text: #6EDCF2;  --color-info-solid: #4FD3EE; --color-info-on-solid: #04252D; --color-info-border: #164A57;
+  --color-neutral-bg: #1E2B25; --color-neutral-text: #B6C4BD; --color-neutral-solid: #94A39C;
+
+  --color-focus: #4FD3EE;
+  --color-focus-glow: rgba(79, 211, 238, .25);
+  --color-disabled-bg: #26332D;
+
+  --hue-green: #52F990;      --hue-green-soft: #123A24; --hue-green-ink: #6FF7A3;
+  --hue-teal-soft: #0D3333;  --hue-teal-ink: #5FE0DA;
+  --hue-sky-soft: #0B2C35;   --hue-sky-ink: #6EDCF2;
+  --hue-coral-soft: #3A1A12; --hue-coral-ink: #FF9A82;
+  --hue-amber-soft: #33270B; --hue-amber-ink: #FFC85C;
+  --hue-violet: #9B85F0;     --hue-violet-soft: #241D45; --hue-violet-ink: #BBA9FF;
+  --hue-navy: #7FA9CC;       --hue-navy-soft: #142636;  --hue-navy-ink: #9CC3E3;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, .4);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3), 0 14px 30px -22px rgba(0, 0, 0, .8);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, .3), 0 18px 34px -18px rgba(0, 0, 0, .8);
+  --shadow-lg: 0 30px 70px -24px rgba(0, 0, 0, .8), 0 0 0 1px var(--color-border);
+  --shadow-xl: 0 40px 90px -30px rgba(0, 0, 0, .85), 0 0 0 1px var(--color-border);
+  --shadow-float: 0 18px 40px -18px rgba(0, 0, 0, .8);
+  }
+}
+/* Dark theme: forced */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg-app: #0A110E;
+  --color-bg-canvas: #0F1814;
+  --color-surface: #141F1A;
+  --color-surface-raised: #1A2620;
+  --color-surface-sunken: #0F1814;
+  --color-surface-muted: #1E2B25;
+  --color-surface-hover: #22302A;
+  --color-surface-selected: #123321;
+  --color-surface-inverse: #EAF5EE;
+  --color-surface-strong: #22212A;
+  --color-overlay: rgba(0, 0, 0, .6);
+  --color-glass: rgba(20, 31, 26, .72);
+  --color-glass-border: rgba(255, 255, 255, .08);
+
+  --color-text: #E9F1ED;
+  --color-text-secondary: #B6C4BD;
+  --color-text-muted: #94A39C;
+  --color-text-placeholder: #7F8E87;
+  --color-text-disabled: #5E6B65;
+  --color-text-inverse: #0E1512;
+  --color-text-on-accent: #04361B;
+  --color-text-on-strong: #FFFFFF;
+  --color-text-link: #6FF7A3;
+
+  --color-border: #2A3832;
+  --color-border-subtle: #1F2B26;
+  --color-border-strong: #3B4B44;
+  --color-border-input: #64756D;
+
+  --color-accent: #52F990;
+  --color-accent-hover: #8FF7B7;
+  --color-accent-pressed: #3FD978;
+  --color-accent-soft: #123A24;
+  --color-accent-soft-hover: #174A2E;
+  --color-accent-text: #6FF7A3;
+  --color-accent-bright: #52F990;
+
+  --color-success-bg: #123A24; --color-success-text: #6FF7A3; --color-success-solid: #52F990; --color-success-on-solid: #04361B; --color-success-border: #1E5A37;
+  --color-warning-bg: #33270B; --color-warning-text: #FFC85C; --color-warning-solid: #FFC85C; --color-warning-on-solid: #3A2600; --color-warning-border: #5A4416;
+  --color-danger-bg: #3A1A12;  --color-danger-text: #FF9A82; --color-danger-solid: #FF7A5C; --color-danger-on-solid: #2A0D05; --color-danger-border: #6A2D1E; --color-danger-hover: #FF9A82;
+  --color-info-bg: #0B2C35;    --color-info-text: #6EDCF2;  --color-info-solid: #4FD3EE; --color-info-on-solid: #04252D; --color-info-border: #164A57;
+  --color-neutral-bg: #1E2B25; --color-neutral-text: #B6C4BD; --color-neutral-solid: #94A39C;
+
+  --color-focus: #4FD3EE;
+  --color-focus-glow: rgba(79, 211, 238, .25);
+  --color-disabled-bg: #26332D;
+
+  --hue-green: #52F990;      --hue-green-soft: #123A24; --hue-green-ink: #6FF7A3;
+  --hue-teal-soft: #0D3333;  --hue-teal-ink: #5FE0DA;
+  --hue-sky-soft: #0B2C35;   --hue-sky-ink: #6EDCF2;
+  --hue-coral-soft: #3A1A12; --hue-coral-ink: #FF9A82;
+  --hue-amber-soft: #33270B; --hue-amber-ink: #FFC85C;
+  --hue-violet: #9B85F0;     --hue-violet-soft: #241D45; --hue-violet-ink: #BBA9FF;
+  --hue-navy: #7FA9CC;       --hue-navy-soft: #142636;  --hue-navy-ink: #9CC3E3;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, .4);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3), 0 14px 30px -22px rgba(0, 0, 0, .8);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, .3), 0 18px 34px -18px rgba(0, 0, 0, .8);
+  --shadow-lg: 0 30px 70px -24px rgba(0, 0, 0, .8), 0 0 0 1px var(--color-border);
+  --shadow-xl: 0 40px 90px -30px rgba(0, 0, 0, .85), 0 0 0 1px var(--color-border);
+  --shadow-float: 0 18px 40px -18px rgba(0, 0, 0, .8);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms; --duration-base: 0ms; --duration-moderate: 0ms;
+    --duration-slow: 0ms; --duration-slower: 0ms;
+    --duration-enter: 0ms; --duration-count: 0ms; --duration-shimmer: 0ms; --stagger: 0ms;
+    --motion-lift: 0px; --motion-press: 1; --motion-rise: 0px;
+  }
+}
